@@ -1,0 +1,213 @@
+
+html {  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857143; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); }
+
+a { color: rgb(51, 122, 183); text-decoration: none; }
+a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
+
+
+
+.nav { padding-left: 0px; margin-bottom: 0px; list-style: none; }
+.nav > li > a { position: relative; display: block; padding: 10px 15px; }
+.nav > li > a:hover, .nav > li > a:focus { text-decoration: none; background-color: transparent }
+.nav-tabs > li { float: left; margin-bottom: -1px; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: rgb(85, 85, 85); cursor: default; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; background-color: rgb(255, 255, 255); }
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus { border: 1px solid rgb(221, 221, 221); }
+
+
+
+
+
+
+
+a { display: inline-block; float: left; }
+
+
+.removeBorderBottom { border-bottom-style: none; }
+span { line-height: 19px; color: rgb(129, 129, 129); font-family: ArialMT, Arial, sans-serif;font-size: 12px; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: 0px; text-align: left; text-indent: 0px; text-transform: none; word-wrap: break-word;}
+* { margin: 0px; }
+html, body { height: 100%; }
+.style_SkipStroke { opacity: 1; background: transparent; }
+.nav-tabs > li > a { margin-right: 0px; }
+.tabs { margin-top: 20px; }
+
+body { }
+div { overflow: visible; }
+img { border: none; }
+.inline-block.shape-with-text { vertical-align: bottom; }
+body { background-image: url(http://localhost/nourinehammad/public/img/other/subtleLightPatterns.jpg); }
+
+
+
+
+.fb_reset { border: 0px; border-spacing: 0px; color: rgb(0, 0, 0); cursor: auto; direction: ltr; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1; margin: 0px; overflow: visible; padding: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-shadow: none; text-transform: none; visibility: visible; white-space: normal; word-spacing: normal; background: none; }
+.fb_reset > div { overflow: hidden; }
+.fb_reset .fb_dialog_legacy { overflow: visible; }
+#fb-root #fb_dialog_ipad_overlay { position: absolute; left: 0px; top: 0px; width: 100%; min-height: 100%; z-index: 10000; background: rgba(0, 0, 0, 0.45098); }
+#fb-root #fb_dialog_ipad_overlay.hidden { display: none; }
+.fb_iframe_widget { display: inline-block; position: relative; }
+.fb_iframe_widget span { display: inline-block; position: relative; text-align: justify; }
+.fb_iframe_widget iframe { position: absolute; }
+
+
+
+#theHeader
+{
+	height:5px
+}
+
+#divOfImage
+{
+	position:relative;
+	width: 50%;
+	height: 50%;
+	left: 13px;
+	top: -46px;
+}
+
+
+
+
+/* Main Divs */
+
+body {  line-height: 1.5; margin-top: 0px; width: 26em; margin-right: auto; margin-left: auto; }
+#content {width: 23em; overflow: hidden; margin-top: 0px; float: left; position: relative; position: relative; left: 0px;}
+
+.contentbox {  float: left; margin-top: 70px; background: rgb(255, 255, 255); }
+
+
+
+/* Exhibition  */
+#ExhibitionImage { content: url(../img/other/Exhibition.jpg); width: 8.8em;height: 8.8em; margin-left: 30px;margin-top: 20px;margin-bottom: 20px;border: none;}
+#ExhibitionImage:after /*for Chrome*/
+{
+    content: url(../img/other/Exhibition.jpg);
+
+    width: 4.4em;
+    height: 4.4em;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: none;
+}
+#exhibitionTextTop
+{
+	height:1em;
+}
+
+
+
+/* About Page */
+#socialNetworkLinks{margin-bottom:100px}
+
+.aboutTextSpan{font-size: 15px !important;}
+
+
+#aboutTopDiv{height:5.5em}
+
+
+/* Home  Nourine Name  */
+body{
+background-image: url("../img/other/subtleLightPatterns.jpg");
+
+}
+.homePageImages1 {width: 11em; max-width: 100%;height: 14.8em;border: 0px;}
+.homePageImages {width: 8.5em;max-width: 100%;height: 7.2em; border: 0px;}
+
+
+#divOfName
+{
+	height: 78px;
+ 	left: 0px;
+  top: 107px;
+  z-index: 1;
+  align="center";
+}
+
+.style_2 {
+    color: rgb(94, 55, 50);
+    line-height: 29px;
+    opacity: 1;
+}
+
+.style_1 {
+    color: rgb(173, 173, 173);
+    line-height: 29px;
+    opacity: 1;
+}
+.nourineName { font-size: 21px; }
+
+
+/* Gallery CSS */
+
+#my-gallery a {margin-left: 0.4em;margin-right: 0.1em;margin-bottom: 0.2em;margin-top: 0.5em;}
+
+.galleryImage { width:5em; height:5em;  position: relative; display: inline-block; float: left; box-shadow: rgb(136, 136, 136) 4px 4px 5px;}
+
+.galleryChild { margin-top: 50px; }
+
+
+.kiko-gallery { width: 100%; height: auto; float: left; }
+.kiko-gallery a { display: block; float: left;margin: 0px 4px 12px 5px; line-height: 0;}
+.demo-gallery a { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
+.demo-gallery figure { display: none; }
+
+
+
+
+@media (min-width:320px)
+{
+	body{font-size: 14px;}
+	.homePageImages1 {height: 15.2em;}
+	.demo-gallery__img--main{data-size:"1055x1460"}
+	#nav { font-size: 12px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 10px; }
+	/*#content  { width: 23em; } /* smartphones, iPhone, portrait 480x320 phones */
+
+@media (min-width:481px)
+{
+	body{font-size: 16px;}
+	#nav { font-size: 15px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 20px; }
+	/*#content  { width: 420px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+}
+@media (min-width:641px)
+{
+		body{font-size: 26px;}
+		/*#content  { width: 560px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+ /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width:961px)
+{
+		body{font-size: 33px;}
+		.galleryImage{width:100px;height:100px; }
+		/*#content  { width: 860px; }
+		.galleryImage{width:100px;height:100px; }
+	 /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width:1025px)
+{
+	body{font-size: 36px;}
+	#my-gallery a {margin-right: 12px; margin-left: 24px; margin-bottom: 22px;margin-top: 11px;}
+	.homePageImages {width: 172px; max-width: 100%;height: 145px; border: 0px;}
+	.homePageImages1 {width: 240px; max-width: 100%; h;height: 301px;border: 0px;}
+	#ExhibitionImage { content: url(../img/other/Exhibition.jpg); height: auto; max-width: 80%; max-height: 80%; margin-left: 30px;margin-top: 20px;margin-bottom: 20px;border: none;}
+	#ExhibitionImage:after /*for Chrome*/
+	{
+	    content: url(../img/other/Exhibition.jpg);
+	    height: auto;
+	    max-width: 40%;
+	    max-height: 40%;
+	    margin-left: 0px;
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	    border: none;
+	}
+	/*#content  { width: 960px; } /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width:1281px)
+{
+	body{font-size: 38px;}
+ /* hi-res laptops and desktops */
+}

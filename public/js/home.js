@@ -4,9 +4,17 @@ var lastChoosenTab; //used to store the last opened tab in order to disable
 $( document ).ready(function()
 {
     console.log( "ready!" );
+    var swipeSpeed = 600;
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+     if (isMobile.matches)
+     {
+           swipeSpeed = 400;
+     }
+
     $('#content').slick({
       infinite: true,
-      speed: 400,
+      speed: swipeSpeed,
       slidesToShow: 1,
       adaptiveHeight: true,
       arrows: false
@@ -31,7 +39,7 @@ $( document ).ready(function()
       mq.addListener(WidthChange);
       WidthChange(mq);
 
-      
+
 });
 
 

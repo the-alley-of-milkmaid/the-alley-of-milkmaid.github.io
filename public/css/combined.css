@@ -119,7 +119,6 @@ body {  line-height: 1.5; margin-top: 0px; width: 26em; margin-right: auto; marg
 
 
 /* About Page */
-#socialNetworkLinks{margin-bottom:100px}
 
 .contactTextSpan{font-size: 15px !important;}
 
@@ -207,6 +206,10 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 {
 	margin-bottom:15px !important;
 }
+
+#socialNetworkLinks{margin-bottom:100px; }
+
+
 
 
 @media (min-width:320px)

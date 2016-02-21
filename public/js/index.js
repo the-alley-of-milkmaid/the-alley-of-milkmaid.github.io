@@ -1,11 +1,13 @@
 var lastChoosenTab; //used to store the last opened tab in order to disable
 //tabs being choosen on slide Transition
 
+var isMobile;
+
 $( document ).ready(function()
 {
     console.log( "ready!" );
     var swipeSpeed = 600;
-    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+    isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
      if (isMobile.matches)
      {
@@ -115,6 +117,23 @@ function CSSPropertiesAddedOnTheFly()
   $(".exhibitionImage").css("width",exhibitionPhotoSize);
   $(".exhibitionImage").css("height",exhibitionPhotoSize);
 
+
+
+  $("#fblikeDiv").removeAttr("data-layout"); //to enable source copying in git
+  $("#fblikeDiv").removeAttr("data-show-faces");
+  $("#fblikeDiv").removeAttr("data-href");
+
+  if(isMobile.matches)
+  {
+    $("#fblikeDiv").attr("data-layout","button_count");
+    $("#fblikeDiv").attr("data-show-faces","false");
+  }
+  else
+  {
+    $("#fblikeDiv").attr("data-layout","standard");
+    $("#fblikeDiv").attr("data-show-faces","true");
+  }
+  $("#fblikeDiv").attr("data-href","https://www.facebook.com/Nourine-Hammad-1413192872293705/");
 }
 
 

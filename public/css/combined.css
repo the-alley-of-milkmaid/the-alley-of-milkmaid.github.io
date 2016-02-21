@@ -144,11 +144,25 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 #divOfName
 {
-	height: 78px;
+	margin-top: 15px;
  	left: 0px;
   top: 107px;
   z-index: 1;
   align="center";
+}
+
+#titlePElement
+{
+	text-align: center;
+}
+
+#divInImageOpenPhotoSwipe
+{
+	margin-top: 15%;
+	margin-right: 10%;
+    font-size: 17px;
+    color: white;
+		margin-left: 15px;
 }
 
 .style_2 {
@@ -188,7 +202,11 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 .demo-gallery figure { display: none; }
 
-
+/*///////////////Contact Page */
+.IGF
+{
+	margin-bottom:15px !important;
+}
 
 
 @media (min-width:320px)

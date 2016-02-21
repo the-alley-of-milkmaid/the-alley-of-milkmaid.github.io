@@ -5,8 +5,9 @@
 <div id="contactTopDiv"></div>
 
 <div >
-      <p><span class ="contactTextSpan">Self taught hyperrealistic artist. <br /></span></p>
-      <p><span class ="contactTextSpan">nourine.hammad@gmail.com<br /></span></p>
+      <p><span class ="contactTextSpan"><?php
+      echo $contactPageText;
+      ?><br /></span></p>
 
 
       </div>
@@ -14,8 +15,7 @@
 
         <span class="ig-follow" data-id="9b21ace95f" data-handle="nourinehammadart" data-count="true" data-size="small" data-username="true"></span>
         <br>
-        <div class="fb-like" data-href="https://www.facebook.com/Nourine-Hammad-1413192872293705/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-
+        <div class="fb-like" data-href="https://www.facebook.com/Nourine-Hammad-1413192872293705/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 </div>
 </div>
 <div class="col-xs-1 col-sm-4"></div>

@@ -1,14 +1,57 @@
-
-
 <?php
 
-include 'data.php';
-
-function getGalleryRowCount()
+function getGalleryRowCount1()
 {
-	global $images,$maxImagesPerColumn;
-    return count($images)/$maxImagesPerColumn;
+	//global $images,$maxImagesPerColumn;
+  return 5;//count($images)/$maxImagesPerColumn;
 }
+
+
+/////////////////////////// Exhibition Functions ///////////////////////////
+function getExhibitionsCount()
+{
+	global $exhibitions;
+	return count($exhibitions);
+}
+
+function givenExhibitionIndexGetImageDiv($index)
+{
+	global $exhibtionsLocation,$exhibitions;
+	$j=0;
+	$imagePath = $exhibtionsLocation.$exhibitions[$index][$j++];
+	$exhibitionName = $exhibitions[$index][$j++];
+	$exhibitionType = $exhibitions[$index][$j++];
+	$exhibitionDate = $exhibitions[$index][$j++];
+  $exhibitionLink = $exhibitions[$index][$j++];
+	$exhibitionDescription = $exhibitions[$index][$j++];
+  $formatNew ='
+	<div class= "ExhibitionContainerDiv col-xs-12 col-sm-12 col-md-6">
+		<div class="col-xs-6 col-sm-6 col-md-6">
+
+       <img src="%s" itemprop="thumbnail" alt="Image description" class="exhibitionImage"  />
+
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="ExhibitionDescription">
+			<h4>%s</h4>
+			<span style ="font-style:italic" class="subtitle">%s</span><br>
+			<span style ="font-weight:600"  class="date">%s</span><br>
+			<span class="description">%s</span><br>
+			<a href="%s" style="font-size:12px">Read More</a><br>
+			</div>
+		</div>
+	</div>
+		';
+		//$formatNew ='<figure class="galleryImageContainer">
+    //  <a href="%s" itemprop="contentUrl" data-size="964x1024">
+      //    <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
+    //  </a>
+    //	</figure>';
+		$result =  sprintf($formatNew,$imagePath,$exhibitionName,$exhibitionType,$exhibitionDate,$exhibitionLink,$exhibitionDescription);
+    return $result;
+}
+
+
 function getImagesCount()
 {
 	global $images;
@@ -97,17 +140,17 @@ function givenGalleryImageIndexGetImageDiv($index)
 	if(!isIndexEmpty($index))
 	{
     $formatNew ='
-
+		<div class="galleryImageContainer col-xs-12 col-sm-12 col-md-3">
     <a href="%s" data-size="1020x1024">
        <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
        <figure>%s</figure>
-    </a>';
+    </a></div>';
 		//$formatNew ='<figure class="galleryImageContainer">
     //  <a href="%s" itemprop="contentUrl" data-size="964x1024">
       //    <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
     //  </a>
     //	</figure>';
-		$result =  sprintf($formatNew,$imagePathBig,$imagePathSmall,$imageCaption);
+		$result =  sprintf($formatNew,$imagePathBig,$imagePathBig,$imageCaption);
        return $result;
 	}
 	else

@@ -11,7 +11,7 @@ echo '
 
     <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="public/js/photoswipehome.js"></script>
-    <script src="public/js/home.js"></script>
+    <script src="public/js/index.js"></script>
     <link rel="stylesheet" href="public/library/bootstrap/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" href="public/library/photoswipe/photoswipe.css">
@@ -20,6 +20,17 @@ echo '
 
 
     <title>Nourine Hammad </title>
-  </head>
-    ';
+
+
+  <script type="text/javascript">
+          var widthOfArtworkBoxContainer    = ' .  json_encode($widthOfArtworkBoxContainer) .';
+          var heightOfArtworkBoxContainer    = ' .  json_encode($heightOfArtworkBoxContainer) .';
+          var maxWidthOfArtwork    = ' .  json_encode($maxWidthOfArtwork) .';
+          var maxHeightOfArtwork    = ' .  json_encode($maxHeightOfArtwork) .';
+            var exhibitionPhotoSize    = ' .  json_encode($exhibitionPhotoSize) .';
+
+
+  </script>
+
+  </head>';
 ?>

@@ -71,7 +71,7 @@ body { background-image: url(http://localhost/nourinehammad/public/img/other/sub
 /* Main Divs */
 
 body {  line-height: 1.5; margin-top: 0px; width: 26em; margin-right: auto; margin-left: auto; }
-#content {width: 23em; overflow: hidden; margin-top: 0px; float: left; position: relative; position: relative; left: 0px;}
+#content {width: 25em; overflow: hidden; margin-top: 0px; float: left; position: relative; position: relative; left: 0px;}
 
 .contentbox {  float: left; margin-top: 70px; background: rgb(255, 255, 255); }
 
@@ -95,15 +95,42 @@ body {  line-height: 1.5; margin-top: 0px; width: 26em; margin-right: auto; marg
 	height:1em;
 }
 
+.ExhibitionContainerDiv
+{
+	overflow:auto;
+	margin-bottom:20px;
+	margin-top:10px;
+}
+
+.exhibitionImage
+{
+	margin-right:10px;
+}
+
+.ExhibitionDescription
+{
+	margin-left:10px;
+}
+
+.combiningExhibitions
+{
+	overflow: auto;
+}
 
 
 /* About Page */
 #socialNetworkLinks{margin-bottom:100px}
 
-.aboutTextSpan{font-size: 15px !important;}
+.contactTextSpan{font-size: 15px !important;}
 
 
-#aboutTopDiv{height:5.5em}
+
+#contactTopDiv{height:5.5em}
+
+#bio
+{
+	font-size: 11px;
+}
 
 
 /* Home  Nourine Name  */
@@ -142,7 +169,15 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 #my-gallery a {margin-left: 0.4em;margin-right: 0.1em;margin-bottom: 0.2em;margin-top: 0.5em;}
 
-.galleryImage { width:5em; height:5em;  position: relative; display: inline-block; float: left; box-shadow: rgb(136, 136, 136) 4px 4px 5px;}
+.galleryImage {  position: relative; display: inline-block; float: center; box-shadow: rgb(136, 136, 136) 4px 4px 5px;}
+
+.galleryImageContainer
+{
+	 	display: inline-block;
+  	float: left;
+}
+
+
 
 .galleryChild { margin-top: 50px; }
 
@@ -181,7 +216,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 @media (min-width:961px)
 {
 		body{font-size: 33px;}
-		.galleryImage{width:100px;height:100px; }
+
 		/*#content  { width: 860px; }
 		.galleryImage{width:100px;height:100px; }
 	 /* tablet, landscape iPad, lo-res laptops ands desktops */

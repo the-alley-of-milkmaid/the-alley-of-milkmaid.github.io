@@ -38,6 +38,7 @@ $( document ).ready(function()
       var mq = window.matchMedia("(min-width: 961px)");
       mq.addListener(WidthChange);
       WidthChange(mq);
+      CSSPropertiesAddedOnTheFly();
 
 
 });
@@ -103,6 +104,19 @@ window.onresize = function()
    	fixDisplay();
    	//console.log(window.outerWidth);
 }
+
+function CSSPropertiesAddedOnTheFly()
+{
+  $(".galleryImageContainer").css("width",widthOfArtworkBoxContainer);
+  $(".galleryImageContainer").css("height",heightOfArtworkBoxContainer);
+  $(".galleryImage").css("max-width",maxWidthOfArtwork);
+  $(".galleryImage").css("height",maxHeightOfArtwork);
+
+  $(".exhibitionImage").css("width",exhibitionPhotoSize);
+  $(".exhibitionImage").css("height",exhibitionPhotoSize);
+
+}
+
 
 function WidthChange(mq)
 {

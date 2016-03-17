@@ -7,7 +7,7 @@ $imagesLocationNormal= "public/img/normalSize/";
 
 
 //About data
-$bioText = "FF Working in pastels, pencils and charcoal Nourine Hammad not only strives to produce works that are representational, but goes beyond that and tries to discover the truth within her subjects. By approaching her subject matter honestly and without vanity, she strives to create detailed work that celebrates perfection and imperfection which coexist comfortably alongside each other. The way Hammad plays with objects and colour is sophisticated and balanced. A feast for the eyes.";
+$bioText = "Working in pastels, pencils and charcoal Nourine Hammad not only strives to produce works that are representational, but goes beyond that and tries to discover the truth within her subjects. By approaching her subject matter honestly and without vanity, she strives to create detailed work that celebrates perfection and imperfection which coexist comfortably alongside each other. The way Hammad plays with objects and colour is sophisticated and balanced. A feast for the eyes.";
 $enquiryText = "For purchase enquiries and costs, or to arrange a viewing, please contact our team at info@plusonegallery.com or phone the gallery directly on 020 7730 7656.";
 $mainImageNumber = "7"; //index of image in images array
 

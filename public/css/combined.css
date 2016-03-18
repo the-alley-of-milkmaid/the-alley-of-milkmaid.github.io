@@ -15,17 +15,23 @@ a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
 .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus { border: 1px solid rgb(221, 221, 221); }
 
 
+*:focus {
+    outline: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
 
 
 
 
-
-a { display: inline-block; float: left; }
+a {display: inline-block;float: left;}
 
 
 .removeBorderBottom { border-bottom-style: none; }
 span { line-height: 19px; color: rgb(129, 129, 129); font-family: ArialMT, Arial, sans-serif;font-size: 12px; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: 0px; text-align: left; text-indent: 0px; text-transform: none; word-wrap: break-word;}
-* { margin: 0px; }
+* {margin: 0px;}
 html, body { height: 100%; }
 .style_SkipStroke { opacity: 1; background: transparent; }
 .nav-tabs > li > a { margin-right: 0px; }
@@ -70,15 +76,15 @@ body { background-image: url(http://localhost/nourinehammad/public/img/other/sub
 
 /* Main Divs */
 
-body {  line-height: 1.5; margin-top: 0px; width: 26em; margin-right: auto; margin-left: auto; }
-#content {width: 25em; overflow: hidden; margin-top: 0px; float: left; position: relative; position: relative; left: 0px;}
+body {line-height: 1.5;margin-top: 0px;width: 100%;margin-right: auto;margin-left: auto;}
+#content {width: 100%;overflow: hidden;margin-top: 0px;float: left;position: relative;position: relative;left: 0px;}
 
-.contentbox {  float: left; margin-top: 70px; background: rgb(255, 255, 255); }
+.contentbox { margin-top: 52px;}
 
 
 
 /* Exhibition  */
-#ExhibitionImage { content: url(../img/other/Exhibition.jpg); width: 8.8em;height: 8.8em; margin-left: 30px;margin-top: 20px;margin-bottom: 20px;border: none;}
+#ExhibitionImage {  content: url(../img/other/Exhibition.jpg); width: 8.8em;height: 8.8em; margin-left: 30px;margin-top: 20px;margin-bottom: 20px;border: none;}
 #ExhibitionImage:after /*for Chrome*/
 {
     content: url(../img/other/Exhibition.jpg);
@@ -105,6 +111,7 @@ body {  line-height: 1.5; margin-top: 0px; width: 26em; margin-right: auto; marg
 .exhibitionImage
 {
 	margin-right:10px;
+	box-shadow: rgb(136, 136, 136) 4px 4px 5px;
 }
 
 .ExhibitionDescription
@@ -143,7 +150,7 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 #divOfName
 {
-	margin-top: 15px;
+	margin-top: 7px;
  	left: 0px;
   top: 107px;
   z-index: 1;
@@ -175,19 +182,43 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
     line-height: 29px;
     opacity: 1;
 }
-.nourineName { font-size: 21px; }
+.nourineName {
+    width: 44%;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+
+}
 
 
-/* Gallery CSS */
+/*kiko Gallery CSS */
 
-#my-gallery a {margin-left: 0.4em;margin-right: 0.1em;margin-bottom: 0.2em;margin-top: 0.5em;}
 
-.galleryImage {  position: relative; display: inline-block; float: center; box-shadow: rgb(136, 136, 136) 4px 4px 5px;}
+.pImageName{text-align: center;font-style: italic; margin:0px; margin-left: 5px;    font-size: 1.2em;}
+
+
+.pSold{color: red;}
+
+.pBold{font-weight: bold;}
+
+.pSpaceToNextImage
+{
+	margin-bottom:15px;
+	margin-top: -4px;
+}
+
+.pMargin{margin:0px;margin-top: -7px; }
+
+#my-gallery a {/* margin-left: 0.4em; *//* margin-right: 0.1em; *//* margin-bottom: 0.2em; */margin-top: 0.5em;}
+
+.galleryImage {width: 100%;position: relative;display: inline-block;float: center;}
 
 .galleryImageContainer
 {
 	 	display: inline-block;
   	float: left;
+		padding-right:0px!important;
+		padding-left:0px!important;
 }
 
 
@@ -197,7 +228,7 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 .kiko-gallery { width: 100%; height: auto; float: left; }
 .kiko-gallery a { display: block; float: left;margin: 0px 4px 12px 5px; line-height: 0;}
-.demo-gallery a { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+.demo-gallery a {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 .demo-gallery figure { display: none; }
 
@@ -207,7 +238,17 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 	margin-bottom:15px !important;
 }
 
-#socialNetworkLinks{margin-bottom:100px; }
+.ig-text
+{
+	    font-size: 13px!important;
+}
+
+.aboutLinks{margin: auto;
+    width: 60%; }
+
+
+
+
 
 
 

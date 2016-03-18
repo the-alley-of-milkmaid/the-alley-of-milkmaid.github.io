@@ -12,6 +12,8 @@ echo '
     <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="public/js/photoswipehome.js"></script>
     <script src="public/js/index.js"></script>
+    <script src="public/js/jquery.detect_swipe.js"></script>
+
     <link rel="stylesheet" href="public/library/bootstrap/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" href="public/library/photoswipe/photoswipe.css">

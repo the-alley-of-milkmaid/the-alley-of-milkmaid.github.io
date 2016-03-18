@@ -2,28 +2,49 @@ var lastChoosenTab; //used to store the last opened tab in order to disable
 //tabs being choosen on slide Transition
 
 var isMobile;
+var swipeSpeed = 600;
 
 $( document ).ready(function()
 {
+//  $("a").focus(function(){
+
+    //this.blur();
+    //this.parentElement.blur(); did not work
+//});
+$.detectSwipe.threshold=50;
+      $  ("body").on('swipeleft',  function(){
+      slickSwipe("left");
+      })
+              .on('swiperight', function(){slickSwipe("right");})
+
+    $("#fblikeDiv").removeAttr("data-href");
     console.log( "ready!" );
-    var swipeSpeed = 600;
+
     isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
      if (isMobile.matches)
      {
            swipeSpeed = 400;
+           $(".hrefToRemoveInMobile").removeAttr("href");
+
+     }
+     else
+     {
+       initPhotoSwipeFromDOM('#demo-test-gallery');
+       initPhotoSwipeFromDOM('#my-gallery');
      }
 
     $('#content').slick({
-      infinite: true,
+      infinite: false,
       speed: swipeSpeed,
       slidesToShow: 1,
       adaptiveHeight: true,
-      arrows: false
+      arrows: false,
+      swipe:false,
+      touchMove:false
 });
 
-    initPhotoSwipeFromDOM('#demo-test-gallery');
-    initPhotoSwipeFromDOM('#my-gallery');
+
     fixDisplay();
     lastChoosenTab=$('.active')[0];
     $('#content').on('afterChange', function(event, slick, currentSlide)
@@ -44,6 +65,9 @@ $( document ).ready(function()
 
 
 });
+
+
+
 
 
 function goto(id, t)
@@ -78,6 +102,18 @@ function tryToSlickGoTo(id)
   }
 }
 
+function slickSwipe(direction)
+{
+  var currentSlide = $('#content').slick('slickCurrentSlide');
+  if(direction=="right" && currentSlide!=0)
+  {
+    $('#content').slick('slickGoTo',currentSlide-1,false);
+  }else if(direction=="left" && currentSlide!=3)
+  {
+    $('#content').slick('slickGoTo',currentSlide+1,false);
+  }
+}
+
 
 function changeDisplay(newDisplay)
 {
@@ -109,13 +145,13 @@ window.onresize = function()
 
 function CSSPropertiesAddedOnTheFly()
 {
-  $(".galleryImageContainer").css("width",widthOfArtworkBoxContainer);
-  $(".galleryImageContainer").css("height",heightOfArtworkBoxContainer);
-  $(".galleryImage").css("max-width",maxWidthOfArtwork);
-  $(".galleryImage").css("height",maxHeightOfArtwork);
+ $(".galleryImageContainer").css("width","100%");
+  $(".galleryImageContainer").css("height","100%");
+  $(".galleryImage").css("max-width","100%");
+  $(".galleryImage").css("height","100%");
 
-  $(".exhibitionImage").css("width",exhibitionPhotoSize);
-  $(".exhibitionImage").css("height",exhibitionPhotoSize);
+  $(".exhibitionImage").css("width","100%");
+  $(".exhibitionImage").css("height","100%");
 
 
 

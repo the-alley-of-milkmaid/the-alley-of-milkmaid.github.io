@@ -17,6 +17,13 @@ function givenImageIndexGetBigImagePath1($index)
 function getHomeMainImage()
 {
   global $mainImageNumber;
+
+	if($mainImageNumber=="")
+	{
+		return "";
+	}
+
+
   $imagePathBig = givenImageIndexGetBigImagePath1($mainImageNumber);
   $imageCaption = givenImageIndexGetImageCaption1($mainImageNumber);
 

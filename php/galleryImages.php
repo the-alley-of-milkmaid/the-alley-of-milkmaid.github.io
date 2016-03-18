@@ -134,17 +134,51 @@ function givenImageIndexGetImageCaption($index)
 
 function givenGalleryImageIndexGetImageDiv($index)
 {
+  global $imagesLocationNormal,$images;
+
 	$imagePathSmall = givenImageIndexGetSmallImagePath($index);
 	$imagePathBig = givenImageIndexGetBigImagePath($index);
   $imageCaption = givenImageIndexGetImageCaption($index);
+
+
+  $j=0;
+  $imagePath = $imagesLocationNormal.$images[$index][$j++];
+  $imageName = $images[$index][$j++];
+  $imageMedium = $images[$index][$j++];
+  $imageFrame = $images[$index][$j++];
+  //$soldOptional= array_key_exists ($j,$images)?$images[$index][$j++]:"";
+
 	if(!isIndexEmpty($index))
 	{
+  /*  $randomBool = rand(0,1) == 1;
+  $classTest="";
+    if($randomBool)
+    {
+      $classTest="pImageName2";
+    }*/
     $formatNew ='
 		<div class="galleryImageContainer col-xs-12 col-sm-12 col-md-3">
-    <a href="%s" data-size="1020x1024">
+    <p class="pImageName">'.$imageName .'</p>
+    <a class="hrefToRemoveInMobile" href="%s" data-size="1020x1024">
        <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
        <figure>%s</figure>
-    </a></div>';
+    </a>';
+
+  //$formatNew .= '<p>'.$imageName .'</p>';
+  $formatNew .= '<p class="pMargin"><b>Medium: </b>'.$imageMedium .'</p>';
+  $formatNew .= '<p class="pMargin"><b>Size:   </b>'.$imageFrame .'</p>';
+
+
+  //
+  if(array_key_exists($j,$images[$index]))
+      $formatNew .= '<p class="pSpaceToNextImage  pSold">'.$images[$index][$j] .'</p>';
+  else {
+    $formatNew .= '<p class="pSpaceToNextImage"></p>';
+  }
+  //$formatNew = $soldOptional!="":'<p>'.$soldOptional .'</p>':$formatNew;
+
+      $formatNew .='
+    </div>';
 		//$formatNew ='<figure class="galleryImageContainer">
     //  <a href="%s" itemprop="contentUrl" data-size="964x1024">
       //    <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />

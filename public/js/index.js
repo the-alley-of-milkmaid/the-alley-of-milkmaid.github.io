@@ -11,11 +11,11 @@ $( document ).ready(function()
     //this.blur();
     //this.parentElement.blur(); did not work
 //});
-$.detectSwipe.threshold=50;
+  /* $.detectSwipe.threshold=50;
       $  ("body").on('swipeleft',  function(){
       slickSwipe("left");
       })
-              .on('swiperight', function(){slickSwipe("right");})
+              .on('swiperight', function(){slickSwipe("right");}) */
 
     $("#fblikeDiv").removeAttr("data-href");
     console.log( "ready!" );
@@ -39,7 +39,9 @@ $.detectSwipe.threshold=50;
       speed: swipeSpeed,
       slidesToShow: 1,
       adaptiveHeight: true,
-      arrows: false
+      arrows: false,
+      swipe:true,
+      touchMove:true
 });
 
 

@@ -40,8 +40,6 @@ $.detectSwipe.threshold=50;
       slidesToShow: 1,
       adaptiveHeight: true,
       arrows: false,
-      swipe:false,
-      touchMove:false
 });
 
 

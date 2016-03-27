@@ -25,10 +25,7 @@ echo '
 
 
   <script type="text/javascript">
-          var widthOfArtworkBoxContainer    = ' .  json_encode($widthOfArtworkBoxContainer) .';
-          var heightOfArtworkBoxContainer    = ' .  json_encode($heightOfArtworkBoxContainer) .';
-          var maxWidthOfArtwork    = ' .  json_encode($maxWidthOfArtwork) .';
-          var maxHeightOfArtwork    = ' .  json_encode($maxHeightOfArtwork) .';
+        
             var exhibitionPhotoSize    = ' .  json_encode($exhibitionPhotoSize) .';
 
 

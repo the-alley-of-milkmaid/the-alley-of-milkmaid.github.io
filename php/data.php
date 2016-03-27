@@ -1,18 +1,13 @@
 <?php
 
-$imagesLocationSmall= "public/img/smallSize/";
-$imagesLocationNormal= "public/img/normalSize/";
-
-
 
 
 //About data
 $bioText = "FF Working in pastels, pencils and charcoal Nourine Hammad not only strives to produce works that are representational, but goes beyond that and tries to discover the truth within her subjects. By approaching her subject matter honestly and without vanity, she strives to create detailed work that celebrates perfection and imperfection which coexist comfortably alongside each other. The way Hammad plays with objects and colour is sophisticated and balanced. A feast for the eyes.";
 $enquiryText = "For purchase enquiries and costs, or to arrange a viewing, please contact our team at info@plusonegallery.com or phone the gallery directly on 020 7730 7656.";
-$mainImageNumber = ""; //index of image in images array
 
 //Artworks Data
-$maxImagesPerColumn=8; //TODO remove
+$imagesLocationNormal= "public/img/normalSize/";
 $images= array
   (
   array("1.jpg","This is a fdss22","Mixed Media on PAper Board","95 * 71 cm","Sold"),
@@ -34,15 +29,10 @@ $images= array
   array("18.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold"),
   array("19.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold"),
   array("20.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold"),
-  array("21.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold"),
-  array("22.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold"),
+  array("21.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold")
   );
 
-  $heightOfArtworkBoxContainer = 300;
-  $maxHeightOfArtwork = 250;
 
-  $widthOfArtworkBoxContainer  = 300;
-  $maxWidthOfArtwork  = 250;
 
 
   //Exhibition Data

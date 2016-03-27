@@ -157,7 +157,7 @@ function givenGalleryImageIndexGetImageDiv($index)
       $classTest="pImageName2";
     }*/
     $formatNew ='
-		<div class="galleryImageContainer col-xs-12 col-sm-12 col-md-3">
+		<div class="galleryImageContainer col-xs-12 col-md-4">
     <p class="pImageName">'.$imageName .'</p>
     <a class="hrefToRemoveInMobile" href="%s" data-size="1020x1024">
        <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
@@ -165,8 +165,8 @@ function givenGalleryImageIndexGetImageDiv($index)
     </a>';
 
   //$formatNew .= '<p>'.$imageName .'</p>';
-  $formatNew .= '<p class="pMargin"><b>Medium: </b>'.$imageMedium .'</p>';
-  $formatNew .= '<p class="pMargin"><b>Size:   </b>'.$imageFrame .'</p>';
+  $formatNew .= '<p class="pMargin"><b>Medium </b>&nbsp&nbsp'.$imageMedium .'</p>';
+  $formatNew .= '<p class="pMargin"><b>Size</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'.$imageFrame .'</p>';
 
 
   //

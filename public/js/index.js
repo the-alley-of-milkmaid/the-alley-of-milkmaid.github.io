@@ -145,10 +145,10 @@ window.onresize = function()
 
 function CSSPropertiesAddedOnTheFly()
 {
- $(".galleryImageContainer").css("width","100%");
-  $(".galleryImageContainer").css("height","100%");
-  $(".galleryImage").css("max-width","100%");
-  $(".galleryImage").css("height","100%");
+// $(".galleryImageContainer").css("width","100%");
+//  $(".galleryImageContainer").css("height","100%");
+  //$(".galleryImage").css("max-width","100%");
+  //$(".galleryImage").css("height","100%");
 
   $(".exhibitionImage").css("width","100%");
   $(".exhibitionImage").css("height","100%");

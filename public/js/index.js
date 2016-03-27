@@ -6,7 +6,6 @@ var swipeSpeed = 600;
 
 $( document ).ready(function()
 {
-  alert('hey');
 //  $("a").focus(function(){
 
     //this.blur();
@@ -41,6 +40,8 @@ $.detectSwipe.threshold=50;
       slidesToShow: 1,
       adaptiveHeight: true,
       arrows: false,
+      swipe:false,
+      touchMove:false
 });
 
 

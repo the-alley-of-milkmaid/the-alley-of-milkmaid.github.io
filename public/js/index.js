@@ -17,6 +17,8 @@ $( document ).ready(function()
       })
               .on('swiperight', function(){slickSwipe("right");}) */
 
+
+
     $("#fblikeDiv").removeAttr("data-href");
     console.log( "ready!" );
 

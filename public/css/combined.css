@@ -7,7 +7,7 @@ a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
 
 
 
-.nav { padding-left: 0px; margin-bottom: 0px; list-style: none; }
+.nav { padding-left: 0px; margin-bottom: 0px; list-style: none;font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 5px; }
 .nav > li > a { position: relative; display: block; padding: 10px 15px; }
 .nav > li > a:hover, .nav > li > a:focus { text-decoration: none; background-color: transparent }
 .nav-tabs > li { float: left; margin-bottom: -1px; }

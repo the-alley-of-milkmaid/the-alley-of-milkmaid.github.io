@@ -41,7 +41,7 @@ $( document ).ready(function()
       adaptiveHeight: true,
       arrows: false,
       swipe:true,
-      touchMove:true
+      touchMove:false
 });
 
 

@@ -175,6 +175,9 @@ function givenGalleryImageIndexGetImageDiv($index)
   else {
     $formatNew .= '<p class="pSpaceToNextImage"></p>';
   }
+    //$formatNew .= '<img src="public/img/other/SeperatorLine.png" class="pMargin" alt="Seperator Line" width="300px" height="12">';
+  //
+
   //$formatNew = $soldOptional!="":'<p>'.$soldOptional .'</p>':$formatNew;
 
       $formatNew .='

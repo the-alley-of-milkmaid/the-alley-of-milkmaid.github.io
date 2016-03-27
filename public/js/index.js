@@ -33,7 +33,10 @@ $( document ).ready(function()
      else
      {
        initPhotoSwipeFromDOM('#demo-test-gallery');
-       initPhotoSwipeFromDOM('#my-gallery');
+-      initPhotoSwipeFromDOM('#my-gallery');
+       //initPhotoSwipeFromDOM('.galleryImageContainer');
+       //initPhotoSwipeFromDOM('#my-gallery');
+
      }
 
     $('#content').slick({

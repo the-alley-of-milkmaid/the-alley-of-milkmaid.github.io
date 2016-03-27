@@ -284,12 +284,14 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 	.homePageImages1 {height: 15.2em;}
 	.demo-gallery__img--main{data-size:"1055x1460"}
 	#nav { font-size: 12px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 10px; }
+  .nav { letter-spacing: 2px; }
 	/*#content  { width: 23em; } /* smartphones, iPhone, portrait 480x320 phones */
 
 @media (min-width:481px)
 {
 	body{font-size: 16px;}
 	#nav { font-size: 15px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 20px; }
+  .nav { letter-spacing: 3px; }
 	/*#content  { width: 420px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
 }
@@ -306,6 +308,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
     .pImageName{font-size: 21px;}
     .pSold{font-size: 21px;}
     .pMargin{font-size: 21px;}
+    .nav { letter-spacing: 5px; }
 
 
 		/*#content  { width: 860px; }

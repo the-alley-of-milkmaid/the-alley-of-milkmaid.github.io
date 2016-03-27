@@ -6,6 +6,7 @@ var swipeSpeed = 600;
 
 $( document ).ready(function()
 {
+  alert('hey');
 //  $("a").focus(function(){
 
     //this.blur();

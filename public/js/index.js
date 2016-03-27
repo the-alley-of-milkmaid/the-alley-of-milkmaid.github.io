@@ -39,9 +39,7 @@ $.detectSwipe.threshold=50;
       speed: swipeSpeed,
       slidesToShow: 1,
       adaptiveHeight: true,
-      arrows: false,
-      swipe:false,
-      touchMove:false
+      arrows: false
 });
 
 

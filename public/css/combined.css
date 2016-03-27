@@ -284,21 +284,22 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 	.homePageImages1 {height: 15.2em;}
 	.demo-gallery__img--main{data-size:"1055x1460"}
 	#nav { font-size: 10px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 10px; }
-  .nav { letter-spacing: 2px; }
+  .nav { letter-spacing: 1px; }
 	/*#content  { width: 23em; } /* smartphones, iPhone, portrait 480x320 phones */
 
 @media (min-width:481px)
 {
 	body{font-size: 16px;}
 	#nav { font-size: 11px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 20px; }
-  .nav { letter-spacing: 3px; }
+  .nav { letter-spacing: 2px; }
 	/*#content  { width: 420px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
 }
 @media (min-width:641px)
 {
 		body{font-size: 26px;}
-    #nav { font-size: 15px;} 
+    #nav { font-size: 15px;}
+    .nav { letter-spacing: 3px; }
 		/*#content  { width: 560px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */

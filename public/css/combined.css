@@ -175,7 +175,7 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
     opacity: 1;
 }
 .nourineName {
-    width: 44%;
+    width: 60%;
 		display: block;
 	 margin-left: auto;
 	 margin-right: auto;
@@ -188,7 +188,7 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 .pImageName{text-align: center;font-style: italic; margin:0px; margin-left: 5px;font-size: 1.2em;}
 
-.pImageName{font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 2px;}
+.pImageName{font-family: 'Open Sans', sans-serif;font-weight: lighter;letter-spacing: 1px;}
 /*.pMargin{font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 2px;}
 .pSold{font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 2px;}*/
 
@@ -202,7 +202,7 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 	margin-top: -4px;
 }
 
-.pMargin{margin:0px;margin-top: -7px; }
+.pMargin{margin:0px;margin-top: -7px;font-family: 'Open Sans', sans-serif;letter-spacing: 1px;}
 
 #my-gallery a {/* margin-left: 0.4em; *//* margin-right: 0.1em; *//* margin-bottom: 0.2em; */margin-top: 0.5em;}
 
@@ -261,6 +261,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 .contactNames
 {
   margin: auto;
+
 }
 
 #socialNetworkLinks
@@ -272,6 +273,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 {
   color: #000; /* Fallback for older browsers */
   color: rgba(0, 0, 0, 0.001);
+  margin-top:5px;
 }
 
 
@@ -284,11 +286,14 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 @media (min-width:320px)
 {
 	body{font-size: 14px;}
+  pSold{font-size: 12px;}
 	.homePageImages1 {height: 15.2em;}
 	.demo-gallery__img--main{data-size:"1055x1460"}
 	#nav { font-size: 8px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 10px; }
   .nav { letter-spacing: 1px; }
   #nav{left: 3%;}
+  #content {margin-top: 2px;}
+
 	/*#content  { width: 23em; } /* smartphones, iPhone, portrait 480x320 phones */
 }
 @media (min-width:330px)
@@ -301,8 +306,12 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 	#nav { font-size: 10px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 20px; }
   .nav { letter-spacing: 2px; }
   #nav{left: 6%;}
+  #content {margin-top: 3px;}
 	/*#content  { width: 420px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-
+  .invisibleText
+  {
+    margin-top:5px;
+  }
 }
 @media (min-width:641px)
 {
@@ -311,20 +320,29 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
     #nav{left: 20%;}
     .nav { letter-spacing: 3px; }
     #bio {font-size: 12px;}
+    #content {margin-top: 4px;}
 		/*#content  { width: 560px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-
+    .contactNames
+    {
+      margin-right: 0px;
+    }
  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 @media (min-width:961px)
 {
-    #nav{left: 24%;}
+    #nav{left: 28%;}
 		body{font-size: 29px;}
-    .pImageName{font-size: 21px;}
-    .pSold{font-size: 21px;}
-    .pMargin{font-size: 21px;}
+    .pImageName{font-size: 14px;/* font-family: 'Open Sans', sans-serif; */}
+    .pSold{font-size: 14px;}
+    .pMargin{font-size: 14px;}
     .nav { letter-spacing: 5px; }
     #bio {font-size: 13px;}
-
+    #content {margin-top: 12px;}
+    .contactNames
+    {
+      margin-right: 228px;
+      margin-left: 23px;
+    }
 		/*#content  { width: 860px; }
 		.galleryImage{width:100px;height:100px; }
 	 /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -332,6 +350,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 @media (min-width:1025px)
 {
 	body{font-size: 36px;}
+  #content {margin-top: 17px;}
 	#my-gallery a {margin-right: 12px; margin-left: 24px; margin-bottom: 22px;margin-top: 11px;}
   .pMargin{margin-right: 12px; margin-left: 24px; }
   .pSold{margin-right: 12px; margin-left: 24px; }
@@ -350,6 +369,11 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 	    border: none;
 	}
   #bio {font-size: 15px;}
+  .contactNames
+  {
+    margin-right: 328px;
+    margin-left: 33px;
+  }
 	/*#content  { width: 960px; } /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width:1281px)

@@ -3,7 +3,7 @@ var lastChoosenTab; //used to store the last opened tab in order to disable
 
 var isMobile;
 var swipeSpeed = 600;
-
+var swipe=false;
 $( document ).ready(function()
 {
 //  $("a").focus(function(){
@@ -28,16 +28,19 @@ $( document ).ready(function()
      {
            swipeSpeed = 400;
            $(".hrefToRemoveInMobile").removeAttr("href");
-
+           swipe=true;
      }
      else
      {
-       initPhotoSwipeFromDOM('#demo-test-gallery');
--      initPhotoSwipeFromDOM('#my-gallery');
+       //initPhotoSwipeFromDOM('#demo-test-gallery');
+     //initPhotoSwipeFromDOM('.hrefToRemoveInMobile');
        //initPhotoSwipeFromDOM('.galleryImageContainer');
        //initPhotoSwipeFromDOM('#my-gallery');
-
+        initPhotoSwipeFromDOM('.galleryImageContainer');
      }
+
+    
+
 
     $('#content').slick({
       infinite: false,
@@ -45,11 +48,10 @@ $( document ).ready(function()
       slidesToShow: 1,
       adaptiveHeight: true,
       arrows: false,
-      swipe:true,
+      swipe:swipe,
       touchMove:false
 });
-
-
+	gotoArtworkIfUrlContainsGidAndPid();
     fixDisplay();
     lastChoosenTab=$('.active')[0];
     $('#content').on('afterChange', function(event, slick, currentSlide)
@@ -72,7 +74,41 @@ $( document ).ready(function()
 });
 
 
+function gotoArtworkIfUrlContainsGidAndPid()
+{
+	var photoswipeParseHash = function() {
+				var hash = window.location.hash.substring(1),
+			    params = {};
 
+			    if(hash.length < 5) { // pid=1
+			        return params;
+			    }
+
+			    var vars = hash.split('&');
+			    for (var i = 0; i < vars.length; i++) {
+			        if(!vars[i]) {
+			            continue;
+			        }
+			        var pair = vars[i].split('=');
+			        if(pair.length < 2) {
+			            continue;
+			        }
+			        params[pair[0]] = pair[1];
+			    }
+
+			    if(params.gid) {
+			    	params.gid = parseInt(params.gid, 10);
+			    }
+
+			    return params;
+			};
+			
+ var hashData = photoswipeParseHash();
+			if(hashData.pid && hashData.gid) {
+				tryToSlickGoTo(1);
+			}
+
+}
 
 
 function goto(id, t)

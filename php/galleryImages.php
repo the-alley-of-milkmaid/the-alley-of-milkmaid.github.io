@@ -156,22 +156,25 @@ function givenGalleryImageIndexGetImageDiv($index)
     {
       $classTest="pImageName2";
     }*/
+    list($width, $height, $type, $attr) = getimagesize($imagePathBig);
+    //echo "<p>".$width." </p>";
+
     $formatNew ='
 		<div class="galleryImageContainer col-xs-12 col-md-4">
     <p class="pImageName">'.$imageName .'</p>
-    <a class="hrefToRemoveInMobile" href="%s" data-size="1020x1024">
+    <a class="hrefToRemoveInMobile" href="%s" data-size="'.$width.'x'.$height.'">
        <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
        <figure>%s</figure>
     </a>';
 
   //$formatNew .= '<p>'.$imageName .'</p>';
-  $formatNew .= '<p class="pMargin"><b>Medium </b>&nbsp&nbsp'.$imageMedium .'</p>';
-  $formatNew .= '<p class="pMargin"><b>Size</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'.$imageFrame .'</p>';
+  $formatNew .= '<p class="pMargin">&nbsp&nbsp'.$imageMedium .'</p>';
+  $formatNew .= '<p class="pMargin">&nbsp&nbsp'.$imageFrame .'</p>';
 
 
   //
   if(array_key_exists($j,$images[$index]))
-      $formatNew .= '<p class="pSpaceToNextImage  pSold">'.$images[$index][$j] .'</p>';
+      $formatNew .= '<p class="pSpaceToNextImage  pSold">&nbsp&nbsp'.$images[$index][$j] .'</p>';
   else {
     $formatNew .= '<p class="pSpaceToNextImage"></p>';
   }

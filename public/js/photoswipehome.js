@@ -2,7 +2,7 @@
 var initPhotoSwipeFromDOM = function(gallerySelector)
 {
 			var parseThumbnailElements = function(el) {
-			    var thumbElements = el.childNodes,
+			    var thumbElements = document.getElementsByClassName('hrefToRemoveInMobile'),
 			        numNodes = thumbElements.length,
 			        items = [],
 			        el,
@@ -85,7 +85,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector)
 
 			    var clickedGallery = clickedListItem.parentNode;
 
-			    var childNodes = clickedListItem.parentNode.childNodes,
+			    var childNodes = document.getElementsByClassName('hrefToRemoveInMobile'),
 			        numChildNodes = childNodes.length,
 			        nodeIndex = 0,
 			        index;
@@ -162,7 +162,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector)
 							captionEl.children[0].innerText = '';
 							return false;
 						}
-						captionEl.children[0].innerHTML = item.title +  '<br/><small>Photo: ' + item.author + '</small>';
+						captionEl.children[0].innerHTML = item.title;
 						return true;
 			        },
 

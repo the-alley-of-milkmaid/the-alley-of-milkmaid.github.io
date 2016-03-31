@@ -185,6 +185,7 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 /*Gallery CSS */
 
+.pswp__caption__center{text-align: center;}
 
 .pImageName{text-align: center;font-style: italic; margin:0px; margin-left: 5px;font-size: 1.2em;}
 

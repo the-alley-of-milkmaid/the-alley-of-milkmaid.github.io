@@ -9,13 +9,13 @@ echo '
     <script src="public/library/photoswipe/photoswipe.js"></script>
     <script src="public/library/photoswipe/photoswipe-ui-default.min.js"></script>
 
-    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="public/library/slick/slick.min.js"></script>
     <script src="public/js/photoswipehome.js"></script>
     <script src="public/js/index.js"></script>
     <script src="public/js/jquery.detect_swipe.js"></script>
 
     <link rel="stylesheet" href="public/library/bootstrap/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="public/library/slick/slick.css"/>
     <link rel="stylesheet" href="public/library/photoswipe/photoswipe.css">
     <link rel="stylesheet" href="public/library/photoswipe/default-skin/default-skin.css">
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/combined.css" />
@@ -25,7 +25,7 @@ echo '
 
 
   <script type="text/javascript">
-        
+
             var exhibitionPhotoSize    = ' .  json_encode($exhibitionPhotoSize) .';
 
 

@@ -53,5 +53,5 @@ $images= array
 
 
     //Contact Data
-    $contactPageText = "nourine.hammad@gmail.com";
+    $contactPageText = "contact@nourinehammad.com";
 ?>

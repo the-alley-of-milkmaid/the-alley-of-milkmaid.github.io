@@ -161,22 +161,28 @@ function givenGalleryImageIndexGetImageDiv($index)
 
     $formatNew ='
 		<div class="galleryImageContainer col-xs-12 col-md-4">
-    <p class="pImageName">'.$imageName .'</p>
+    <p class="pContentNone pImageName">'.$imageName .'</p>
     <a class="hrefToRemoveInMobile" href="%s" data-size="'.$width.'x'.$height.'">
        <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
        <figure>%s</figure>
+       <div class="desktopOnly overlay overlayhuge" >
+			             <span class="title">Queen of Hearts<br><br><br>2015</span>
+			            	
+			            <span class="size">200 x 140 cm<br><br>
+			            Media paper oily </span>
+			            </div>
     </a>';
 
   //$formatNew .= '<p>'.$imageName .'</p>';
-  $formatNew .= '<p class="pMargin">&nbsp&nbsp'.$imageMedium .'</p>';
-  $formatNew .= '<p class="pMargin">&nbsp&nbsp'.$imageFrame .'</p>';
+  $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp'.$imageMedium .'</p>';
+  $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp'.$imageFrame .'</p>';
 
 
   //
   if(array_key_exists($j,$images[$index]))
-      $formatNew .= '<p class="pSpaceToNextImage  pSold">&nbsp&nbsp'.$images[$index][$j] .'</p>';
+      $formatNew .= '<p class="pContentNone pSpaceToNextImage  pSold">&nbsp&nbsp'.$images[$index][$j] .'</p>';
   else {
-    $formatNew .= '<p class="pSpaceToNextImage"></p>';
+    $formatNew .= '<p class="pContentNone pSpaceToNextImage"></p>';
   }
     //$formatNew .= '<img src="public/img/other/SeperatorLine.png" class="pMargin" alt="Seperator Line" width="300px" height="12">';
   //

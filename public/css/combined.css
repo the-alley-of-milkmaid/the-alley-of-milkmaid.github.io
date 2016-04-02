@@ -30,7 +30,7 @@ a {display: inline-block;float: left;}
 
 
 .removeBorderBottom { border-bottom-style: none; }
-span { line-height: 19px; color: rgb(129, 129, 129); font-family: ArialMT, Arial, sans-serif;font-size: 12px; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: 0px; text-align: left; text-indent: 0px; text-transform: none; word-wrap: break-word;}
+span {line-height: 19px;color: rgb(129, 129, 129);font-family: ArialMT, Arial, sans-serif;/* font-size: 12px; */font-stretch: normal;font-style: normal;font-variant: normal;font-weight: 400;letter-spacing: 0px;text-align: left;text-indent: 0px;text-transform: none;word-wrap: break-word;}
 * {margin: 0px;}
 html, body { height: 100%; }
 .style_SkipStroke { opacity: 1; background: transparent; }
@@ -38,7 +38,7 @@ html, body { height: 100%; }
 .tabs { margin-top: 20px; }
 
 body { }
-div { overflow: visible; }
+div {/* overflow: visible; */}
 img { border: none; }
 .inline-block.shape-with-text { vertical-align: bottom; }
 body { background-image: url(http://localhost/nourinehammad/public/img/other/subtleLightPatterns.jpg); }
@@ -121,6 +121,7 @@ body {line-height: 1.5;margin-top: 0px;width: 100%;margin-right: auto;margin-lef
 .ExhibitionDescription
 {
 	margin-left:10px;
+  font-size: 12px!important;
 }
 
 .combiningExhibitions
@@ -213,7 +214,7 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 {
 	 	display: inline-block;
   	float: left;
-		padding-right:0px!important;
+		/*padding-right:0px!important;*/
 		padding-left:0px!important;
 }
 
@@ -235,7 +236,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 
 /*///////////////Contact Page */
 
-.contactTextSpan{font-size: 15px !important;}
+.contactTextSpan{font-size: 1.2em !important;}
 
 .contactEmailAndSocialText{ margin-left:2px;font-size: 13px !important;font-weight: bold;}
 
@@ -256,7 +257,8 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 	    font-size: 13px!important;
 }
 
-.contactLinks{margin: auto;
+.contactLinks{
+   /* margin: auto; */
    }
 
 .contactNames
@@ -286,6 +288,15 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 
 @media (min-width:320px)
 {
+
+  .pContentNone
+  {
+    display: block;
+  }
+  .desktopOnly
+  {
+    display: none;
+  }
 	body{font-size: 14px;}
   pSold{font-size: 12px;}
 	.homePageImages1 {height: 15.2em;}
@@ -299,10 +310,27 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 }
 @media (min-width:330px)
 {
-	#nav { font-size: 9px;}
+  .pContentNone
+  {
+    display: block;
+  }
+  .desktopOnly
+  {
+    display: none;
+  }
+	#nav { font-size: 8px;}
 }
 @media (min-width:481px)
 {
+
+  .pContentNone
+  {
+    display: block;
+  }
+  .desktopOnly
+  {
+    display: none;
+  }
 	body{font-size: 16px;}
 	#nav { font-size: 10px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 20px; }
   .nav { letter-spacing: 2px; }
@@ -316,6 +344,15 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 }
 @media (min-width:641px)
 {
+
+    .pContentNone
+    {
+      display: block ;
+    }
+    .desktopOnly
+    {
+      display: none;
+    }
 		body{font-size: 26px;}
     #nav { font-size: 14px;}
     #nav{left: 20%;}
@@ -331,6 +368,14 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 }
 @media (min-width:961px)
 {
+  .pContentNone
+  {
+    display: none;
+  }
+  .desktopOnly
+  {
+    display: block;
+  }
     #nav{left: 28%;}
 		body{font-size: 29px;}
     .pImageName{font-size: 14px;/* font-family: 'Open Sans', sans-serif; */}
@@ -350,6 +395,14 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 }
 @media (min-width:1025px)
 {
+  .pContentNone
+  {
+    display: none;
+  }
+  .desktopOnly
+  {
+    display: block;
+  }
 	body{font-size: 36px;}
   #content {margin-top: 17px;}
 	#my-gallery a {margin-right: 12px; margin-left: 24px; margin-bottom: 22px;margin-top: 11px;}
@@ -379,6 +432,105 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 }
 @media (min-width:1281px)
 {
+
+  .pContentNone
+  {
+    display: none;
+  }
+  .desktopOnly
+  {
+    display: block;
+  }
 	body{font-size: 38px;}
  /* hi-res laptops and desktops */
+}
+
+
+
+
+
+.overlaysmall {	margin-top: -128%;}
+.overlaymedium {margin-top: -59.8%;}
+.overlayhuge {margin-top: -112.5%;}
+
+.overlay {
+	width: 88%;
+	height: 93.6%;
+	position: absolute;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-transition:  ease-in-out 0.4s;
+	-moz-transition:  ease-in-out 0.4s;
+	transition:  ease-in-out 0.4s;
+}
+
+	.block {
+		width: 1px;
+		height: 45px;
+		background: #fff;
+		position: absolute;
+		margin-top: -16px;
+		margin-left: ;
+		top: 48%;
+		left: 50%;
+
+		-webkit-transition:  ease-in-out 0.4s;
+		-moz-transition:  ease-in-out 0.4s;
+		transition:  ease-in-out 0.4s;
+
+	
+	}
+
+	.overlay:hover {
+		display: block;
+		opacity: 1;
+	}
+
+
+
+.overlaysmall span.title, .overlayhuge span.title {
+	color: fff;
+	font-weight: lighter;
+	margin-top: 26%;
+	display: block;
+  text-align: center;
+}
+
+.overlaymedium span.title{
+	color: fff;
+	font-weight: lighter;
+	margin-top: 12%;
+	display: block;
+  text-align: center;
+}
+
+
+
+
+.overlaysmall span.size{
+	color: fff;
+	font-weight: lighter;
+	margin-top: 39%;
+	display: block;
+  text-align: center;
+}
+
+.overlayhuge span.size {
+	color: fff;
+	font-weight: lighter;
+	margin-top: 54%;
+	display: block;
+  text-align: center;
+}
+
+.overlaymedium span.size{
+	color: fff;
+	font-weight: lighter;
+	margin-top: 19%;
+	display: block;
+  text-align: center;
+}
+.centerPseudo
+{
+  text-align:center;
 }

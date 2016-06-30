@@ -18,15 +18,16 @@
   <?php include_once 'php/socialNetworks.php';?>
 
   <?php include 'pages/titleInHome.php';?>
+
   <div id="content">
 
     <?php include_once 'pages/about.php';?>
     <?php include_once 'pages/gallery.php';?>
     <?php include_once 'pages/exhibition.php';?>
-    <?php include_once 'pages/contact.php';
-
-    ?>
+    <?php include_once 'pages/articles.php';?>
+    <?php include_once 'pages/contact.php';?>
   </div>
   <?php include_once 'php/navigation.php';?>
+
 </body>
 </html>

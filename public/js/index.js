@@ -149,7 +149,7 @@ function slickSwipe(direction)
   if(direction=="right" && currentSlide!=0)
   {
     $('#content').slick('slickGoTo',currentSlide-1,false);
-  }else if(direction=="left" && currentSlide!=3)
+  }else if(direction=="left" && currentSlide!=4)
   {
     $('#content').slick('slickGoTo',currentSlide+1,false);
   }

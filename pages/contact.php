@@ -4,22 +4,40 @@
 
 
 <div class="centerPseudo">
-<div class ="contactLinks" >
-      <p><span class ="contactTextSpan"><?php
-      echo $contactPageText;
-      ?><br /></span></p>
-      </div>
 
-<div id ="socialNetworkLinks" class ="aboutLinks">
 
-        <span class="instagramSize ig-follow" data-id="9b21ace95f" data-handle="nourinehammadart" data-count="true" data-size="small" data-username="true"></span>
-        <br>
-        <span class="instagramSize">
-          <div id="fblikeDiv" class="fb-like" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-        </span>
 
+
+  <div id="enquiry">
+        <center>
+
+					<a class="contactSocialIcons theAFloatNone" href="<?php echo $facebookPage;?>" target="blank"><img src="public/img/other/fb.svg"></a>
+					<a class="contactSocialIcons theAFloatNone" href="<?php echo $instagramPage;?>" target="blank"><img src="public/img/other/insta.svg"></a>
+						<!--<<li><img src="images/pin.svg"></li>-->
+
+            </center>
+  </div>
+            <br/>
+            <div class="nourineMail">
+      <center>
+              <a id="theMailCenterA" class="theAFloatNone" href="mailto:<?php
+              echo $contactPageText;
+              ?>" class="theCorrectFont mail"><?php
+              echo strtoupper($contactPageText);
+              ?></a>
+      </center>
+            </div>
+
+
+</div>
+<div class="theCorrectFontParagraph col-xs-offset-2 col-xs-8" id="enquiry">
+
+<center>
+    <?php
+    echo $enquiryText;
+    ?>
+</center>
 </div>
 
 
-</div>
 </div>

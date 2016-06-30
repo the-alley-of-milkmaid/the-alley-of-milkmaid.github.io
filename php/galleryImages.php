@@ -6,6 +6,26 @@ function getGalleryRowCount1()
   return 5;//count($images)/$maxImagesPerColumn;
 }
 
+/////////////////////////// Articles Functions ///////////////////////////
+function getArticlesCount()
+{
+	global $articles;
+	return count($articles);
+}
+
+function givenArticlesIndexGetArticlesParagraph($index)
+{
+  	global $articles;
+    $j=0;
+  	$name = $articles[$index][$j++];
+  	$link = $articles[$index][$j++];
+    $formatNew ='
+    <div class="articlePDivs"><a class="articleLinks" href="%s">%s</a>
+    </div>
+  		';
+  	$result =  sprintf($formatNew,$link,$name);
+    return $result;
+}
 
 /////////////////////////// Exhibition Functions ///////////////////////////
 function getExhibitionsCount()
@@ -165,9 +185,9 @@ function givenGalleryImageIndexGetImageDiv($index)
     <a class="hrefToRemoveInMobile" href="%s" data-size="'.$width.'x'.$height.'">
        <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
        <figure>%s</figure>
-       <div class="desktopOnly overlay overlayhuge" >
+       <div class="desktopOnly overlay overlayhuge"  >
 			             <span class="title">Queen of Hearts<br><br><br>2015</span>
-			            	
+
 			            <span class="size">200 x 140 cm<br><br>
 			            Media paper oily </span>
 			            </div>

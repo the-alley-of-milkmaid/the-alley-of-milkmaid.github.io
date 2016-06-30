@@ -1,8 +1,8 @@
 
 html {  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857143; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); }
+body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 14px;line-height: 1.42857143;color: black;background-color: rgb(255, 255, 255);}
 
-a { color: black; text-decoration: none; }
+a {color: black;text-decoration: none;}
 a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
 
 
@@ -10,7 +10,7 @@ a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
 .nav { padding-left: 0px; margin-bottom: 0px; list-style: none;font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 5px; }
 .nav > li > a { position: relative; display: block; padding: 10px 15px; }
 .nav > li > a:hover, .nav > li > a:focus { text-decoration: none; background-color: transparent }
-.nav-tabs > li { float: left; margin-bottom: -1px; }
+.nav-tabs > li {float: left;margin-bottom: -1px;}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: navy; cursor: default; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; background-color: rgb(255, 255, 255); }
 .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus { border: 1px solid rgb(221, 221, 221); }
 
@@ -34,8 +34,8 @@ span {line-height: 19px;color: rgb(129, 129, 129);font-family: ArialMT, Arial, s
 * {margin: 0px;}
 html, body { height: 100%; }
 .style_SkipStroke { opacity: 1; background: transparent; }
-.nav-tabs > li > a { margin-right: 0px; }
-.tabs { margin-top: 20px; }
+.nav-tabs > li > a {margin-right: 0px;}
+.tabs {margin-top: 20px;}
 
 body { }
 div {/* overflow: visible; */}
@@ -130,7 +130,42 @@ body {line-height: 1.5;margin-top: 0px;width: 100%;margin-right: auto;margin-lef
 }
 
 
+/*      Articles    */
+#articlesDiv
+{
+  margin-left: 10%;
+}
 
+.articlePDivs
+{
+  /* margin-bottom: 10px; */
+  /* color: #2c87f0!important; */
+  /*margin-top: 10px;*/
+  /* clear: both; */
+/*  margin-left: 20px;*/
+  /* width: 9%; */
+  /* height: 50px; */
+  /* position: absolute; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* display: block; */
+}
+
+.articleLinks
+{
+  color:#2c87f0!important;
+  margin-top: 0px;
+  clear: both;
+  font-size: 22px;
+  line-height: 1.3;
+  /* margin-left: 20px; */
+  /* width: 9%; */
+  /* height: 50px; */
+  /* position: absolute; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* display: block; */
+}
 
 /* Home  Nourine Name  */
 body{
@@ -177,10 +212,10 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 }
 .nourineName {
     width: 60%;
-		display: block;
-	 margin-left: auto;
-	 margin-right: auto;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
 
 
@@ -213,9 +248,9 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 .galleryImageContainer
 {
 	 	display: inline-block;
-  	float: left;
-		/*padding-right:0px!important;*/
-		padding-left:0px!important;
+	 	float: left;
+	 	/*padding-right:0px!important;*/
+	 	padding-left:0px!important;
 }
 
 .galleryTextSize
@@ -236,15 +271,98 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 
 /*///////////////Contact Page */
 
+.contactSocialIcons
+{
+  width: 25px;
+  height:25px;
+  margin-right: 2.9em;
+  opacity: 0.5;
+}
+
+.contactSocialLi
+{
+  display:inline;
+}
+
+
+#mainAboutImage
+{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.mail
+{/* margin-left: 0%; */font-size: 1.3em;}
+
+.social
+{
+  /* margin-left: 46%; */
+  /* margin-bottom: 60%; */
+}
+
+a:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+
+p, a, center {
+	/* font-size: 15px; */
+	font-weight: lighter;
+	line-height: 1.8em;
+	color: #000;
+	-webkit-transition:  ease-in-out 0.3s;
+	-moz-transition:  ease-in-out 0.3s;
+	transition:  ease-in-out 0.3s;
+	background: transparent;
+	text-decoration: none;
+}
+
+
+
+
 .contactTextSpan{font-size: 1.2em !important;}
 
 .contactEmailAndSocialText{ margin-left:2px;font-size: 13px !important;font-weight: bold;}
 
-#contactTopDiv{height:5.5em}
+#contactTopDiv{height: 3.5em;}
 
 #bio
 {
 	font-size: 11px;
+}
+
+#enquiry
+{
+  font-size: 11px;
+  margin-top: 7%;
+  margin-bottom: 2%;
+}
+
+.theCorrectFont
+{
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 5px;
+}
+
+.theAFloatNone
+{
+  clear:both;
+  float: none!important;
+}
+
+#theMailCenterA
+{
+  font-size: 1.2em;
+}
+
+.theCorrectFontParagraph
+{
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 .IGF
@@ -301,9 +419,9 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
   pSold{font-size: 12px;}
 	.homePageImages1 {height: 15.2em;}
 	.demo-gallery__img--main{data-size:"1055x1460"}
-	#nav { font-size: 8px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 10px; }
+	#nav {font-size: 8px;position: absolute;margin-top: 8px;display: block;/* float: left; */margin-bottom: 10px;}
   .nav { letter-spacing: 1px; }
-  #nav{left: 3%;}
+  #nav{left: -1%;}
   #content {margin-top: 2px;}
 
 	/*#content  { width: 23em; } /* smartphones, iPhone, portrait 480x320 phones */
@@ -318,7 +436,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
   {
     display: none;
   }
-	#nav { font-size: 8px;}
+	#nav {font-size: 8px;}
 }
 @media (min-width:481px)
 {
@@ -355,7 +473,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
     }
 		body{font-size: 26px;}
     #nav { font-size: 14px;}
-    #nav{left: 20%;}
+    #nav{left: 16%;}
     .nav { letter-spacing: 3px; }
     #bio {font-size: 12px;}
     #content {margin-top: 4px;}
@@ -368,6 +486,9 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 }
 @media (min-width:961px)
 {
+  #theMailCenterA {
+    font-size: 0.9em;
+  }
   .pContentNone
   {
     display: none;
@@ -376,7 +497,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
   {
     display: block;
   }
-    #nav{left: 28%;}
+    #nav{left: 24%;}
 		body{font-size: 29px;}
     .pImageName{font-size: 14px;/* font-family: 'Open Sans', sans-serif; */}
     .pSold{font-size: 14px;}
@@ -451,11 +572,10 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 
 .overlaysmall {	margin-top: -128%;}
 .overlaymedium {margin-top: -59.8%;}
-.overlayhuge {margin-top: -112.5%;}
+.overlayhuge {margin-top: -121.5%;}
 
 .overlay {
 	width: 88%;
-	height: 93.6%;
 	position: absolute;
 	opacity: 0;
 	background-color: rgba(0,0,0,0.5);
@@ -478,7 +598,7 @@ a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
 		-moz-transition:  ease-in-out 0.4s;
 		transition:  ease-in-out 0.4s;
 
-	
+
 	}
 
 	.overlay:hover {

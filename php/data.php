@@ -4,7 +4,7 @@
 
 //About data
 $bioText = "Working in pastels, pencils and charcoal Nourine Hammad not only strives to produce works that are representational, but goes beyond that and tries to discover the truth within her subjects. By approaching her subject matter honestly and without vanity, she strives to create detailed work that celebrates perfection and imperfection which coexist comfortably alongside each other. The way Hammad plays with objects and colour is sophisticated and balanced. A feast for the eyes.";
-$enquiryText = "For purchase enquiries and costs, or to arrange a viewing, please contact our team at info@plusonegallery.com or phone the gallery directly on 020 7730 7656.";
+$aboutMainImage = "public/img/normalSize/1.jpg";
 
 //Artworks Data
 $imagesLocationNormal= "public/img/normalSize/";
@@ -52,6 +52,19 @@ $images= array
     );
 
 
+    //Article Data
+    $articles= array
+      (
+        array("sdasds" ,"http://www.w3schools.com/html/"),
+        array("xxx" ,"http://www.w3schools.com/html/"),
+        array("ssss" ,"http://www.w3schools.com/html/"),
+        array("ssss" ,"http://www.w3schools.com/html/"),
+        array("ssss" ,"http://www.w3schools.com/html/"),
+      );
+
     //Contact Data
     $contactPageText = "contact@nourinehammad.com";
+    $facebookPage="https://m.facebook.com/profile.php?id=1413192872293705&refid=17";
+    $instagramPage="https://www.instagram.com/nourinehammadart/";
+    $enquiryText = "For purchase enquiries and costs, or to arrange a viewing, please contact our team at info@plusonegallery.com or phone the gallery directly on 020 7730 7656.";
 ?>

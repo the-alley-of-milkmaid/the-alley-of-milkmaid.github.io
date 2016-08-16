@@ -27,10 +27,25 @@ $images= array
   array("16.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
   array("17.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
   array("18.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("19.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
+
   array("20.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
+    array("19.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
   array("21.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold")
   );
+
+  $gallery_image_to_overlay_size = [
+    "640*640" => array(78.12,100),
+    "960*720" => array(58.5,100),
+    "960*706" => array(57.5,100),
+    "960*708" => array(57.56,100),
+    "960*960" => array(78.2,100),
+    "960*700" => array(57.02,100),
+    "799*960" => array(94,100),
+    "733*960" => array(100,97.5),
+    "751*960" => array(99.9,100),
+    "757*960" => array(99.1,100),
+    "720*960" => array(100,95.9),
+];
 
 
 

@@ -6,13 +6,13 @@
 
 
   <div id="bio">
-    <p class="theCorrectFontParagraph">
+    <p id="theBioParagraph" class="theCorrectFontParagraph">
       <?php
       echo $bioText;
       ?>
     </p>
   <p>&nbsp;</p>
-    <div class="col-xs-offset-2 col-xs-8">
+    <div id="theBioImage"  class="col-xs-offset-2 col-xs-8">
       <img id="mainAboutImage" src="<?php echo $aboutMainImage;?>"></img>
     </div>
   </div>

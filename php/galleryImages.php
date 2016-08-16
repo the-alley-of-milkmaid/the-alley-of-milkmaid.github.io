@@ -154,7 +154,7 @@ function givenImageIndexGetImageCaption($index)
 
 function givenGalleryImageIndexGetImageDiv($index)
 {
-  global $imagesLocationNormal,$images;
+  global $imagesLocationNormal,$images, $gallery_image_to_overlay_size;
 
 	$imagePathSmall = givenImageIndexGetSmallImagePath($index);
 	$imagePathBig = givenImageIndexGetBigImagePath($index);
@@ -177,21 +177,39 @@ function givenGalleryImageIndexGetImageDiv($index)
       $classTest="pImageName2";
     }*/
     list($width, $height, $type, $attr) = getimagesize($imagePathBig);
-    //echo "<p>".$width." </p>";
 
+
+
+    if(isset($gallery_image_to_overlay_size[$width.'*'.$height]))
+    {
+      $computedOverlayHeight=$gallery_image_to_overlay_size[$width.'*'.$height][0];
+      $computedOverlayWidth=$gallery_image_to_overlay_size[$width.'*'.$height][1];
+    }
+    else
+    {
+      $computedOverlayHeight=100;
+      $computedOverlayWidth=100;
+    }
+    $titleMargin=$computedOverlayHeight*0.26;
+    $margin_of_img_to_make_space_smaller=100-$computedOverlayHeight;
+    //echo "<p>".$width." </p>";
     $formatNew ='
 		<div class="galleryImageContainer col-xs-12 col-md-4">
     <p class="pContentNone pImageName">'.$imageName .'</p>
-    <a class="hrefToRemoveInMobile" href="%s" data-size="'.$width.'x'.$height.'">
-       <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
-       <figure>%s</figure>
-       <div class="desktopOnly overlay overlayhuge"  >
-			             <span class="title">Queen of Hearts<br><br><br>2015</span>
+    <a class="gallery_a_element hrefToRemoveInMobile" href="%s" data-size="'.$width.'x'.$height.'" >
+                        <div style="position:relative; display:block; background-image: url(%s); margin-bottom:-'.$margin_of_img_to_make_space_smaller.'%%!important;" class="refcontainer half">
+                        <div class=" overlay overlaysmall" style="display: block; height:'.$computedOverlayHeight.'%% !important;
+                         width:'.$computedOverlayWidth.'%% !important;">
+                        <span class="title" style="margin-top: '.$titleMargin.'%% !important;color:white;">'.$imageName.'</span>
 
-			            <span class="size">200 x 140 cm<br><br>
-			            Media paper oily </span>
-			            </div>
-    </a>';
+                        <span style="color:white;" class="size">'.$width.'x'.$height.' cm<br>
+                        '.$imageMedium.'</span>
+                        </div>
+       			            </div>
+
+    </a>
+
+    ';
 
   //$formatNew .= '<p>'.$imageName .'</p>';
   $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp'.$imageMedium .'</p>';
@@ -216,7 +234,7 @@ function givenGalleryImageIndexGetImageDiv($index)
       //    <img src="%s" itemprop="thumbnail" alt="Image description" class="galleryImage"  />
     //  </a>
     //	</figure>';
-		$result =  sprintf($formatNew,$imagePathBig,$imagePathBig,$imageCaption);
+		$result =  sprintf($formatNew,$imagePathBig,$imagePathBig);//$imageCaption
        return $result;
 	}
 	else

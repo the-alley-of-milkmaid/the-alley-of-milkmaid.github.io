@@ -1,6 +1,6 @@
 
 html {  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 14px;line-height: 1.42857143;color: black;background-color: rgb(255, 255, 255);}
+body {/* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; *//* font-size: 14px; *//* line-height: 1.42857143; *//* color: black; *//* background-color: rgb(255, 255, 255); */}
 
 a {color: black;text-decoration: none;}
 a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
@@ -14,6 +14,24 @@ a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: navy; cursor: default; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; background-color: rgb(255, 255, 255); }
 .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus { border: 1px solid rgb(221, 221, 221); }
 
+
+.delay-1 {
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+.fade-in {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+}
 
 *:focus {
     outline: none;
@@ -38,8 +56,8 @@ html, body { height: 100%; }
 .tabs {margin-top: 20px;}
 
 body { }
-div {/* overflow: visible; */}
-img { border: none; }
+div {overflow: visible;}
+img {/* border: none; */}
 .inline-block.shape-with-text { vertical-align: bottom; }
 body { background-image: url(http://localhost/nourinehammad/public/img/other/subtleLightPatterns.jpg); }
 
@@ -76,7 +94,7 @@ body { background-image: url(http://localhost/nourinehammad/public/img/other/sub
 
 /* Main Divs */
 
-body {line-height: 1.5;margin-top: 0px;width: 100%;margin-right: auto;margin-left: auto;}
+body {/* line-height: 1.5; *//* margin-top: 0px; */width: 100%;margin-right: auto;margin-left: auto;}
 #content {width: 100%;overflow: hidden;margin-top: 2px;float: left;position: relative;position: relative;left: 0px;}
 
 .contentbox { margin-top: 52px;}
@@ -104,6 +122,8 @@ body {line-height: 1.5;margin-top: 0px;width: 100%;margin-right: auto;margin-lef
 .combiningGalleryDivs
 {
   overflow: auto;
+  overflow-y: hidden; // hide vertical
+  overflow-x: hidden; // hide horizontal
 }
 
 .ExhibitionContainerDiv
@@ -120,8 +140,40 @@ body {line-height: 1.5;margin-top: 0px;width: 100%;margin-right: auto;margin-lef
 
 .ExhibitionDescription
 {
-	margin-left:10px;
+  margin-left:10px;
   font-size: 12px!important;
+}
+.half {
+  /* display: block; */
+  /* max-width: 357px; */
+  /* max-height: 349px; */
+  width: 94%;
+  /* height: 42%; */
+}
+
+.gallery_a_element
+{
+  width: 97%;
+  /* height: 100%; */
+}
+
+.half:before {
+     content: "";
+     display: block;
+     padding-bottom: 128%;
+}
+
+.refcontainer {
+    margin: 2% 2%;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
 }
 
 .combiningExhibitions
@@ -176,6 +228,8 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 .homePageImages {width: 8.5em;max-width: 100%;height: 7.2em; border: 0px;}
 
 
+
+
 #divOfName
 {
 	margin-top: 7px;
@@ -183,6 +237,12 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
   top: 107px;
   z-index: 1;
   align="center";
+
+}
+
+.hidden
+{
+  visibility: hidden;
 }
 
 #titlePElement
@@ -223,9 +283,9 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 .pswp__caption__center{text-align: center;}
 
-.pImageName{text-align: center;font-style: italic; margin:0px; margin-left: 5px;font-size: 1.2em;}
+.pImageName{/* text-align: center; *//* font-style: italic; *//* margin:0px; *//* margin-left: 5px; *//* font-size: 1.2em; */}
 
-.pImageName{font-family: 'Open Sans', sans-serif;font-weight: lighter;letter-spacing: 1px;}
+.pImageName{/* font-family: 'Open Sans', sans-serif; *//* font-weight: lighter; *//* letter-spacing: 1px; */}
 /*.pMargin{font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 2px;}
 .pSold{font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 2px;}*/
 
@@ -241,16 +301,18 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 .pMargin{margin:0px;margin-top: -7px;font-family: 'Open Sans', sans-serif;letter-spacing: 1px;}
 
-#my-gallery a { margin-left: 0.4em!important; margin-right: 0.1em!important; margin-bottom: 0.2em!important; margin-top: 0.5em!important;}
+#my-gallery a {margin-left: 0.4em!important;margin-right: 0.1em!important;margin-bottom: 0.2em!important;margin-top: 0.5em!important;}
 
-.galleryImage {width: 100%;position: relative;display: inline-block;float: center;}
+.galleryImage {width: 82%;/* position: relative; *//* display: inline-block; */float: center;}
 
 .galleryImageContainer
 {
 	 	display: inline-block;
 	 	float: left;
-	 	/*padding-right:0px!important;*/
+	 	padding-right:0px!important;
 	 	padding-left:0px!important;
+    overflow-y: hidden!important;
+    overflow-x: hidden!important; 
 }
 
 .galleryTextSize
@@ -306,7 +368,7 @@ a:hover{
 }
 
 p, a, center {
-	/* font-size: 15px; */
+	font-size: 15px;
 	font-weight: lighter;
 	line-height: 1.8em;
 	color: #000;
@@ -325,6 +387,18 @@ p, a, center {
 .contactEmailAndSocialText{ margin-left:2px;font-size: 13px !important;font-weight: bold;}
 
 #contactTopDiv{height: 3.5em;}
+
+
+#theBioParagraph
+{
+    display: none;
+}
+
+#theBioImage
+{
+    display: none;
+}
+
 
 #bio
 {
@@ -385,6 +459,11 @@ p, a, center {
 
 }
 
+body
+{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /*maybe useful for Andorid*/
+}
+
 #socialNetworkLinks
 {
   margin: auto;
@@ -397,7 +476,12 @@ p, a, center {
   margin-top:5px;
 }
 
+input {
+    outline: none;
+}
 
+
+*:focus {outline:none !important}
 
 
 
@@ -406,6 +490,9 @@ p, a, center {
 
 @media (min-width:320px)
 {
+  .overlay:hover {
+    opacity: 0;
+  }
 
   .pContentNone
   {
@@ -419,7 +506,7 @@ p, a, center {
   pSold{font-size: 12px;}
 	.homePageImages1 {height: 15.2em;}
 	.demo-gallery__img--main{data-size:"1055x1460"}
-	#nav {font-size: 8px;position: absolute;margin-top: 8px;display: block;/* float: left; */margin-bottom: 10px;}
+	#nav {font-size: 8px;position: absolute;margin-top: 8px;/* float: left; */margin-bottom: 10px; display:none;}
   .nav { letter-spacing: 1px; }
   #nav{left: -1%;}
   #content {margin-top: 2px;}
@@ -441,6 +528,7 @@ p, a, center {
 @media (min-width:481px)
 {
 
+
   .pContentNone
   {
     display: block;
@@ -450,7 +538,7 @@ p, a, center {
     display: none;
   }
 	body{font-size: 16px;}
-	#nav { font-size: 10px; position: absolute; margin-top: 8px; display: block; float: left; margin-bottom: 20px; }
+	#nav { font-size: 10px; position: absolute; margin-top: 8px; float: left; margin-bottom: 20px; }
   .nav { letter-spacing: 2px; }
   #nav{left: 6%;}
   #content {margin-top: 3px;}
@@ -484,10 +572,13 @@ p, a, center {
     }
  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
-@media (min-width:961px)
+@media (min-width:992px)
 {
   #theMailCenterA {
     font-size: 0.9em;
+  }
+  .overlay:hover {
+    opacity: 1;
   }
   .pContentNone
   {
@@ -499,9 +590,9 @@ p, a, center {
   }
     #nav{left: 24%;}
 		body{font-size: 29px;}
-    .pImageName{font-size: 14px;/* font-family: 'Open Sans', sans-serif; */}
+    .pImageName{/* font-size: 14px; *//* font-family: 'Open Sans', sans-serif; */}
     .pSold{font-size: 14px;}
-    .pMargin{font-size: 14px;}
+    .pMargin{/* font-size: 14px; */}
     .nav { letter-spacing: 5px; }
     #bio {font-size: 13px;}
     #content {margin-top: 12px;}
@@ -518,17 +609,17 @@ p, a, center {
 {
   .pContentNone
   {
-    display: none;
+    /* display: none; */
   }
   .desktopOnly
   {
     display: block;
   }
-	body{font-size: 36px;}
+	body{/* font-size: 36px; */}
   #content {margin-top: 17px;}
-	#my-gallery a {margin-right: 12px; margin-left: 24px; margin-bottom: 22px;margin-top: 11px;}
-  .pMargin{margin-right: 12px; margin-left: 24px; }
-  .pSold{margin-right: 12px; margin-left: 24px; }
+	#my-gallery a {margin-right: 12px;margin-left: 24px;margin-bottom: 22px;margin-top: 11px;}
+  .pMargin{/* margin-right: 12px; *//* margin-left: 24px; */}
+  .pSold{/* margin-right: 12px; *//* margin-left: 24px; */}
 	.homePageImages {width: 172px; max-width: 100%;height: 145px; border: 0px;}
 	.homePageImages1 {width: 240px; max-width: 100%; h;height: 301px;border: 0px;}
 	#ExhibitionImage { content: url(../img/other/Exhibition.jpg); height: auto; max-width: 80%; max-height: 80%; margin-left: 30px;margin-top: 20px;margin-bottom: 20px;border: none;}
@@ -556,7 +647,7 @@ p, a, center {
 
   .pContentNone
   {
-    display: none;
+    /*display: none;*/
   }
   .desktopOnly
   {
@@ -570,20 +661,24 @@ p, a, center {
 
 
 
-.overlaysmall {	margin-top: -128%;}
+.overlaysmall {margin-top: -128%;}
 .overlaymedium {margin-top: -59.8%;}
 .overlayhuge {margin-top: -121.5%;}
 
 .overlay {
-	width: 88%;
-	height: 90%;
+	/* overflow: hidden; */
 	position: absolute;
 	opacity: 0;
 	background-color: rgba(0,0,0,0.5);
 	-webkit-transition:  ease-in-out 0.4s;
 	-moz-transition:  ease-in-out 0.4s;
 	transition:  ease-in-out 0.4s;
+	/* pointer-events: none; */
+	width: 100%;
+	height: 100%;
 }
+
+
 
 	.block {
 		width: 1px;
@@ -602,10 +697,7 @@ p, a, center {
 
 	}
 
-	.overlay:hover {
-		display: block;
-		opacity: 1;
-	}
+
 
 
 

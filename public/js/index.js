@@ -4,8 +4,49 @@ var lastChoosenTab; //used to store the last opened tab in order to disable
 var isMobile;
 var swipeSpeed = 600;
 var swipe=false;
+
+function enter_hover_function()
+{
+	var ffdf= $(this);
+	var fff=ffdf.position();
+	var x=this;
+	var gg=this.getBoundingClientRect();
+	var ff=this.getBoundingClientRect().left;
+	var theOverlay=$("#theOverlay")[0];
+
+	var newTopPosition=this.y-192;//-(this.height/2);
+	console.log("hiehgt: "+this.height+" width: "+ this.width + " y: "+this.y+ " x:"+this.x+" and new Top Position:"+newTopPosition);
+	$("#theOverlay").css({height: this.height , width:this.width, top: newTopPosition, left: this.x, position:'relative' ,opacity: 1});
+	//$("#theOverlay").css({height: this.height , width:this.width, top: fff.top, left: fff.left, position:'relative' ,opacity: 1});
+}
+
+function exit_hover_function()
+{
+	$("#theOverlay").css({opacity: 0});
+}
+function aa()
+{
+
+}
+
+
+
+function bb(){
+
+}
+
+function oneSecondFunction()
+{
+	$("#divOfName").delay(1000).fadeIn(2000).removeClass('hidden');;
+	$("#nav").fadeIn(1000);
+	$("#theBioParagraph").delay(500).fadeIn(1000);
+	$("#theBioImage").delay(500).fadeIn(1000);
+}
+
 $( document ).ready(function()
 {
+	
+	
 //  $("a").focus(function(){
 
     //this.blur();
@@ -15,12 +56,12 @@ $( document ).ready(function()
       $  ("body").on('swipeleft',  function(){
       slickSwipe("left");
       })
-              .on('swiperight', function(){slickSwipe("right");}) */
+              .on('swiperight', function(){slickSwipe("right");})s */
 
-
-
+	$('.galleryImage').hover (enter_hover_function,exit_hover_function);
     $("#fblikeDiv").removeAttr("data-href");
     console.log( "ready!" );
+		window.setTimeout(oneSecondFunction, 1000);
 
     isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
@@ -39,7 +80,7 @@ $( document ).ready(function()
         initPhotoSwipeFromDOM('.galleryImageContainer');
      }
 
-    
+
 
 
     $('#content').slick({
@@ -102,7 +143,7 @@ function gotoArtworkIfUrlContainsGidAndPid()
 
 			    return params;
 			};
-			
+
  var hashData = photoswipeParseHash();
 			if(hashData.pid && hashData.gid) {
 				tryToSlickGoTo(1);

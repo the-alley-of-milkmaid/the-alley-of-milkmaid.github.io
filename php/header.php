@@ -24,7 +24,8 @@ echo '
     <link rel="stylesheet" href="public/library/photoswipe/default-skin/default-skin.css" />
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/combined.css" />
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/nav.css" />
-
+    <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/animationStart.css" />
+    <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/overlay.css" />
 
     <title>Nourine Hammad </title>
 

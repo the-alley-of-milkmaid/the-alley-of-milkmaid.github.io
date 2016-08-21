@@ -22,7 +22,7 @@
       <center>
               <a id="theMailCenterA" class="theAFloatNone" href="mailto:<?php
               echo $contactPageText;
-              ?>" class="theCorrectFont mail"><?php
+              ?>" ><?php
               echo strtoupper($contactPageText);
               ?></a>
       </center>

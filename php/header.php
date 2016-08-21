@@ -1,7 +1,11 @@
 <?php
 echo '
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <script type="text/javascript" src="public/library/jquery/jquery-2.1.4.min.js" ></script>
     <script type="text/javascript" src="public/library/bootstrap/bootstrap.js" ></script>

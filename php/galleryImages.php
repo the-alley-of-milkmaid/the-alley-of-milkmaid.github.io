@@ -200,7 +200,13 @@ function givenGalleryImageIndexGetImageDiv($index)
       <p class="pContentNone pImageName">'.$imageName .'</p>
       <a class="gallery_a_element hrefToRemoveInMobile" href="%s" data-size="'.$widthOfDataSize.'x'.$height.'" >
                           <div style="position:relative; display:block; background-image: url(%s); margin-bottom:-'.$margin_of_img_to_make_space_smaller.'%%!important;" class="refcontainer half">
+                          <div class=" overlay overlaysmall" style="display: block; height:'.$computedOverlayHeight.'%% !important;
+                           width:'.$computedOverlayWidth.'%% !important;">
+                          <span class="theCorrectFontParagraph titleSize overlayTitle" style="margin-top: '.$titleMargin.'%%;color:white;">'.$imageName.'</span>
 
+                          <span style="color:white;" class="theCorrectFontParagraph size overlaySizeAndMedium">'.$width.'x'.$height.' cm<br>
+                          '.$imageMedium.'</span>
+                          </div>
                           </div>
 
       </a>

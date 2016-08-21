@@ -1,0 +1,23 @@
+
+.refcontainer {
+
+  width: 94%;
+  margin: 2% 2%;
+  text-align: center;
+  overflow: hidden;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.refcontainer:before {
+     content: "";
+     display: block;
+     padding-bottom: 128%;
+}
+
+.gallery_a_element
+{
+  width: 97%;
+}

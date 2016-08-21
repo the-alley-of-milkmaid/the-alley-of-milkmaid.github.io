@@ -199,7 +199,7 @@ function givenGalleryImageIndexGetImageDiv($index)
       <div class="galleryImageContainer col-xs-12 col-md-4">
       <p class="pContentNone pImageName">'.$imageName .'</p>
       <a class="gallery_a_element hrefToRemoveInMobile" href="%s" data-size="'.$widthOfDataSize.'x'.$height.'" >
-                          <div style="position:relative; display:block; background-image: url(%s); margin-bottom:-'.$margin_of_img_to_make_space_smaller.'%%!important;" class="refcontainer half">
+                          <div style="position:relative; display:block; background-image: url(%s); margin-bottom:-'.$margin_of_img_to_make_space_smaller.'%%!important;" class="refcontainer">
                           <div class=" overlay overlaysmall" style="display: block; height:'.$computedOverlayHeight.'%% !important;
                            width:'.$computedOverlayWidth.'%% !important;">
                           <span class="theCorrectFontParagraph titleSize overlayTitle" style="margin-top: '.$titleMargin.'%%;color:white;">'.$imageName.'</span>
@@ -221,7 +221,7 @@ function givenGalleryImageIndexGetImageDiv($index)
 		<div class="galleryImageContainer col-xs-12 col-md-4">
     <p class="pContentNone pImageName">'.$imageName .'</p>
     <a class="gallery_a_element hrefToRemoveInMobile" href="%s" data-size="'.$widthOfDataSize.'x'.$height.'" >
-                        <div style="position:relative; display:block; background-image: url(%s); margin-bottom:-'.$margin_of_img_to_make_space_smaller.'%%!important;" class="refcontainer half">
+                        <div style="position:relative; display:block; background-image: url(%s); margin-bottom:-'.$margin_of_img_to_make_space_smaller.'%%!important;" class="refcontainer">
                         <div class=" overlay overlaysmall" style="display: block; height:'.$computedOverlayHeight.'%% !important;
                          width:'.$computedOverlayWidth.'%% !important;">
                         <span class="theCorrectFontParagraph titleSize overlayTitle" style="margin-top: '.$titleMargin.'%%;color:white;">'.$imageName.'</span>

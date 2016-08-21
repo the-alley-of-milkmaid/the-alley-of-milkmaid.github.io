@@ -43,8 +43,11 @@ function oneSecondFunction()
 		$("#divOfName").css('visibility','visible').hide().fadeIn(1000).delay(0).queue(function(next) 
 	{
 		$("#content").css('visibility','visible').hide().fadeIn(500).removeClass('visib_hidden');
-		$("#theNav0").addClass('active');
-		
+		var elementsActive=$(".active");
+		if(elementsActive.length==0)
+		{
+			$("#theNav0").addClass('active');
+		}
 	}).removeClass('visib_hidden');
 		
 	}).fadeIn(2000).removeClass('visib_hidden');;

@@ -8,8 +8,8 @@
   <?php include_once 'php/photoSwipe.php';?>
 
   <?php include 'pages/titleInHome.php';?>
-
-  <div id="content">
+<?php include_once 'php/navigation.php';?>
+  <div id="content" class="visib_hidden">
 
     <?php include_once 'pages/about.php';?>
     <?php include_once 'pages/gallery.php';?>
@@ -17,9 +17,9 @@
     <?php include_once 'pages/articles.php';?>
     <?php include_once 'pages/contact.php';?>
   </div>
-  <?php include_once 'php/navigation.php';?>
 
-  
+
+
 
 </body>
 </html>

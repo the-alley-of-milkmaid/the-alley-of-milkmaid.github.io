@@ -19,6 +19,7 @@ echo '
     <link rel="stylesheet" href="public/library/photoswipe/photoswipe.css" />
     <link rel="stylesheet" href="public/library/photoswipe/default-skin/default-skin.css" />
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/combined.css" />
+    <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/nav.css" />
 
 
     <title>Nourine Hammad </title>

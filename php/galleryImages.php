@@ -20,7 +20,7 @@ function givenArticlesIndexGetArticlesParagraph($index)
   	$name = $articles[$index][$j++];
   	$link = $articles[$index][$j++];
     $formatNew ='
-    <div class="articlePDivs"><a class="articleLinks" href="%s">%s</a>
+    <div class="articlePDivs">  <a class="articleLinks" href="%s">%s</a>
     </div>
   		';
   	$result =  sprintf($formatNew,$link,$name);
@@ -192,17 +192,35 @@ function givenGalleryImageIndexGetImageDiv($index)
     }
     $titleMargin=$computedOverlayHeight*0.26;
     $margin_of_img_to_make_space_smaller=100-$computedOverlayHeight;
+    $widthOfDataSize=$width;
+    if($computedOverlayWidth!=100)
+    {
+      $formatNew ='
+      <div class="galleryImageContainer col-xs-12 col-md-4">
+      <p class="pContentNone pImageName">'.$imageName .'</p>
+      <a class="gallery_a_element hrefToRemoveInMobile" href="%s" data-size="'.$widthOfDataSize.'x'.$height.'" >
+                          <div style="position:relative; display:block; background-image: url(%s); margin-bottom:-'.$margin_of_img_to_make_space_smaller.'%%!important;" class="refcontainer half">
+
+                          </div>
+
+      </a>
+
+      ';
+      //$widthOfDataSize=$width*($computedOverlayWidth/100);
+    //  echo "widthOfDataSize ".$widthOfDataSize." width ".$width." computedOverlayWidth ".$computedOverlayWidth." midanswer ";
+    }
+    else{
     //echo "<p>".$width." </p>";
     $formatNew ='
 		<div class="galleryImageContainer col-xs-12 col-md-4">
     <p class="pContentNone pImageName">'.$imageName .'</p>
-    <a class="gallery_a_element hrefToRemoveInMobile" href="%s" data-size="'.$width.'x'.$height.'" >
+    <a class="gallery_a_element hrefToRemoveInMobile" href="%s" data-size="'.$widthOfDataSize.'x'.$height.'" >
                         <div style="position:relative; display:block; background-image: url(%s); margin-bottom:-'.$margin_of_img_to_make_space_smaller.'%%!important;" class="refcontainer half">
                         <div class=" overlay overlaysmall" style="display: block; height:'.$computedOverlayHeight.'%% !important;
                          width:'.$computedOverlayWidth.'%% !important;">
-                        <span class="title" style="margin-top: '.$titleMargin.'%% !important;color:white;">'.$imageName.'</span>
+                        <span class="theCorrectFontParagraph titleSize overlayTitle" style="margin-top: '.$titleMargin.'%%;color:white;">'.$imageName.'</span>
 
-                        <span style="color:white;" class="size">'.$width.'x'.$height.' cm<br>
+                        <span style="color:white;" class="theCorrectFontParagraph size overlaySizeAndMedium">'.$width.'x'.$height.' cm<br>
                         '.$imageMedium.'</span>
                         </div>
        			            </div>
@@ -210,7 +228,7 @@ function givenGalleryImageIndexGetImageDiv($index)
     </a>
 
     ';
-
+}
   //$formatNew .= '<p>'.$imageName .'</p>';
   $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp'.$imageMedium .'</p>';
   $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp'.$imageFrame .'</p>';
@@ -222,6 +240,8 @@ function givenGalleryImageIndexGetImageDiv($index)
   else {
     $formatNew .= '<p class="pContentNone pSpaceToNextImage"></p>';
   }
+    $formatNew .='<div id="d" class="pContentNone" style="visibility: visible; display: block;">
+<img src="public/img/other/LogoLine.png" class="pContentNone logoLine"></div>';
     //$formatNew .= '<img src="public/img/other/SeperatorLine.png" class="pMargin" alt="Seperator Line" width="300px" height="12">';
   //
 

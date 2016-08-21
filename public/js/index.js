@@ -4,6 +4,7 @@ var lastChoosenTab; //used to store the last opened tab in order to disable
 var isMobile;
 var swipeSpeed = 600;
 var swipe=false;
+var animationStartMilliSecondsDifference=500;
 
 function enter_hover_function()
 {
@@ -37,10 +38,18 @@ function bb(){
 
 function oneSecondFunction()
 {
-	$("#divOfName").delay(1000).fadeIn(2000).removeClass('hidden');;
-	$("#nav").fadeIn(1000);
-	$("#theBioParagraph").delay(500).fadeIn(1000);
-	$("#theBioImage").delay(500).fadeIn(1000);
+	$("#nav").css('visibility','visible').hide().fadeIn(500).delay(0).queue(function(next) 
+	{
+		$("#divOfName").css('visibility','visible').hide().fadeIn(1000).delay(0).queue(function(next) 
+	{
+		$("#content").css('visibility','visible').hide().fadeIn(500).removeClass('visib_hidden');
+		$("#theNav0").addClass('active');
+		
+	}).removeClass('visib_hidden');
+		
+	}).fadeIn(2000).removeClass('visib_hidden');;
+	
+	
 }
 
 $( document ).ready(function()
@@ -98,7 +107,7 @@ $( document ).ready(function()
     $('#content').on('afterChange', function(event, slick, currentSlide)
     {
       var tt= $("#theNav"+currentSlide)[0];
-      if(tt.id!=lastChoosenTab.id)
+      if(lastChoosenTab!=undefined && tt.id!=lastChoosenTab.id)
       {
         chooseLastChoosenTabAndUpdateActiveUIGivenLi(tt);
       }

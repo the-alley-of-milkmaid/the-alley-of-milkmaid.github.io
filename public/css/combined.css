@@ -5,13 +5,21 @@ body {/* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; *//* font-
 a {color: black;text-decoration: none;}
 a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
 
+.nav_tab_li
+{
+font-size: calc(8px + 0.5vw)!important;
+}
 
 
-.nav { padding-left: 0px; margin-bottom: 0px; list-style: none;font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 5px; }
+.nav {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto; padding-left: 0px; margin-bottom: 0px; list-style: none;font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 1px; }
 .nav > li > a { position: relative; display: block; padding: 10px 15px; }
 .nav > li > a:hover, .nav > li > a:focus { text-decoration: none; background-color: transparent }
 .nav-tabs > li {float: left;margin-bottom: -1px;}
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: navy; cursor: default; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; background-color: rgb(255, 255, 255); }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: navy; cursor: default; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; background-color: rgba(0, 0, 0, .075); }
 .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus { border: 1px solid rgb(221, 221, 221); }
 
 
@@ -208,7 +216,7 @@ body {/* line-height: 1.5; *//* margin-top: 0px; */width: 100%;margin-right: aut
   color:#2c87f0!important;
   margin-top: 0px;
   clear: both;
-  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;  font-weight: lighter; letter-spacing: 1px;
   line-height: 1.3;
   /* margin-left: 20px; */
   /* width: 9%; */
@@ -240,9 +248,9 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 }
 
-.hidden
+.visib_hidden
 {
-  visibility: hidden;
+  visibility: hidden!important;
 }
 
 #titlePElement
@@ -278,14 +286,23 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
     margin-top: 50px;
 }
 
+.logoLine
+{
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 
 /*Gallery CSS */
 
 .pswp__caption__center{text-align: center;}
 
-.pImageName{/* text-align: center; *//* font-style: italic; *//* margin:0px; *//* margin-left: 5px; *//* font-size: 1.2em; */}
+.pImageName{ text-align: center;  font-style: italic; margin:0px; margin-left: 5px;  font-size: 1.2em; }
 
-.pImageName{/* font-family: 'Open Sans', sans-serif; *//* font-weight: lighter; *//* letter-spacing: 1px; */}
+.pImageName{ font-family: 'Open Sans', sans-serif;  font-weight: lighter; letter-spacing: 1px; }
 /*.pMargin{font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 2px;}
 .pSold{font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 2px;}*/
 
@@ -295,7 +312,7 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 
 .pSpaceToNextImage
 {
-	margin-bottom:15px;
+	margin-bottom:10px;
 	margin-top: -4px;
 }
 
@@ -312,7 +329,7 @@ background-image: url("../img/other/subtleLightPatterns.jpg");
 	 	padding-right:0px!important;
 	 	padding-left:0px!important;
     overflow-y: hidden!important;
-    overflow-x: hidden!important; 
+    overflow-x: hidden!important;
 }
 
 .galleryTextSize
@@ -368,7 +385,6 @@ a:hover{
 }
 
 p, a, center {
-	font-size: 15px;
 	font-weight: lighter;
 	line-height: 1.8em;
 	color: #000;
@@ -391,13 +407,15 @@ p, a, center {
 
 #theBioParagraph
 {
-    display: none;
+
 }
 
 #theBioImage
 {
-    display: none;
+
 }
+
+
 
 
 #bio
@@ -428,7 +446,7 @@ p, a, center {
 
 #theMailCenterA
 {
-  font-size: 1.2em;
+  font-size: 2.2vw;
 }
 
 .theCorrectFontParagraph
@@ -484,15 +502,39 @@ input {
 *:focus {outline:none !important}
 
 
+#theNav0
+{
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 
-
-
+}
 
 @media (min-width:320px)
 {
   .overlay:hover {
     opacity: 0;
   }
+/*  #theNav0
+  {
+    margin-right: -2%;
+  }
+
+  #theNav1
+  {
+    margin-right: -2%;
+  }
+
+  #theNav3
+  {
+    margin-left: 10%;
+  }
+
+  #theNav4
+  {
+    right: -2%;
+  }*/
 
   .pContentNone
   {
@@ -502,13 +544,19 @@ input {
   {
     display: none;
   }
+  nourineName {
+    width: 80%;
+  }
+
+  .contentbox {
+    margin-top: 5px;
+}
 	body{font-size: 14px;}
   pSold{font-size: 12px;}
 	.homePageImages1 {height: 15.2em;}
 	.demo-gallery__img--main{data-size:"1055x1460"}
-	#nav {font-size: 8px;position: absolute;margin-top: 8px;/* float: left; */margin-bottom: 10px; display:none;}
+	#nav {font-size: 4px!important;margin-top: 8px;/* float: left; */margin-bottom: 10px; }
   .nav { letter-spacing: 1px; }
-  #nav{left: -1%;}
   #content {margin-top: 2px;}
 
 	/*#content  { width: 23em; } /* smartphones, iPhone, portrait 480x320 phones */
@@ -525,6 +573,10 @@ input {
   }
 	#nav {font-size: 8px;}
 }
+
+@media (min-width:440px)
+{
+}
 @media (min-width:481px)
 {
 
@@ -538,9 +590,10 @@ input {
     display: none;
   }
 	body{font-size: 16px;}
-	#nav { font-size: 10px; position: absolute; margin-top: 8px; float: left; margin-bottom: 20px; }
+	#nav { font-size: 10px;  margin-top: 8px;  margin-bottom: 20px; }
   .nav { letter-spacing: 2px; }
-  #nav{left: 6%;}
+
+  #nav { font-size: 10px;}
   #content {margin-top: 3px;}
 	/*#content  { width: 420px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   .invisibleText
@@ -548,9 +601,39 @@ input {
     margin-top:5px;
   }
 }
+
+
+@media (min-width:607px) {
+  #theNav0
+  {
+    margin-right: 0%;
+  }
+
+  #theNav1
+  {
+    margin-right: 0%;
+  }
+
+  #theNav3
+  {
+    margin-left: 0%;
+  }
+
+  #theNav4
+  {
+
+  }
+
+}
+
+
+
 @media (min-width:641px)
 {
 
+  nourineName {
+    width: 60%;
+  }
     .pContentNone
     {
       display: block ;
@@ -559,9 +642,9 @@ input {
     {
       display: none;
     }
+
 		body{font-size: 26px;}
-    #nav { font-size: 14px;}
-    #nav{left: 16%;}
+    #nav { font-size: 10px;}
     .nav { letter-spacing: 3px; }
     #bio {font-size: 12px;}
     #content {margin-top: 4px;}
@@ -574,23 +657,20 @@ input {
 }
 @media (min-width:992px)
 {
-  #theMailCenterA {
-    font-size: 0.9em;
-  }
+
   .overlay:hover {
     opacity: 1;
   }
   .pContentNone
   {
-    display: none;
+    display: none !important;
   }
   .desktopOnly
   {
     display: block;
   }
-    #nav{left: 24%;}
 		body{font-size: 29px;}
-    .pImageName{/* font-size: 14px; *//* font-family: 'Open Sans', sans-serif; */}
+    .pImageName{ font-size: 14px; font-family: 'Open Sans', sans-serif; }
     .pSold{font-size: 14px;}
     .pMargin{/* font-size: 14px; */}
     .nav { letter-spacing: 5px; }
@@ -658,6 +738,35 @@ input {
 }
 
 
+@media (min-width:588px) {
+  #theNav0
+  {
+
+  }
+
+  #theNav1
+  {
+
+  }
+
+  #theNav3
+  {
+
+  }
+
+  #theNav0
+  {
+
+  }
+}
+
+@media (min-width:287px) {
+  #theNav0
+  {
+
+  }
+}
+
 
 
 
@@ -699,7 +808,18 @@ input {
 
 
 
+.overlaySizeAndMedium
+{
+  font-size: 18px!important;
+  font-weight: lighter;
+}
 
+.overlayTitle
+{
+  margin-top:2%;
+  font-size: 18px!important;
+  font-weight: lighter;
+}
 
 .overlaysmall span.title, .overlayhuge span.title {
 	color: fff;
@@ -723,7 +843,15 @@ input {
 .overlaysmall span.size{
 	color: fff;
 	font-weight: lighter;
-	margin-top: 39%;
+	margin-top: 36%;
+	display: block;
+  text-align: center;
+}
+
+.overlaysmall span.titleSize{
+	color: fff;
+	font-weight: lighter;
+
 	display: block;
   text-align: center;
 }

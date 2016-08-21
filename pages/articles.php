@@ -3,6 +3,7 @@
 <div class="contactTopDiv"></div>
 
 <div id="articlesDiv" class="centerPseudo">
+
     <?php
        $articlesCount=getArticlesCount();
        for ($i = 0; $i < $articlesCount; $i++)
@@ -10,5 +11,6 @@
          echo givenArticlesIndexGetArticlesParagraph($i);
        }
     ?>
+
 </div>
 </div>

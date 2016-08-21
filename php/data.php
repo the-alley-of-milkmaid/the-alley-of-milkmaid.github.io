@@ -83,6 +83,8 @@ $enquiryText = "For purchase enquiries and costs, or to arrange a viewing, pleas
 
 
 ////////////////////////////////////////////// KIKO ONLY //////////////////////////////////////////////
+
+//Overlay Data 
 $gallery_image_to_overlay_size = [
   "640*640" => array(78.12,100),
   "960*720" => array(58.5,100),

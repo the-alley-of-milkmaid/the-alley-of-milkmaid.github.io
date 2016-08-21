@@ -29,6 +29,8 @@ echo '
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/exhibition.css" />
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/artwork.css" />
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/article.css" />
+    <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/about.css" />
+    <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/contact.css" />
     <title>Nourine Hammad </title>
 
 

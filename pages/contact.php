@@ -8,7 +8,7 @@
 
 
 
-  <div id="enquiry">
+  <div class="enquiry">
         <center>
 
 					<a class="contactSocialIcons theAFloatNone" href="<?php echo $facebookPage;?>" target="blank"><img src="public/img/other/fb.svg"></a>
@@ -22,7 +22,7 @@
       <center>
               <a id="theMailCenterA" class="theAFloatNone" href="mailto:<?php
               echo $contactPageText;
-              ?>" ><?php
+              ?>" class="theCorrectFont mail"><?php
               echo strtoupper($contactPageText);
               ?></a>
       </center>
@@ -30,7 +30,7 @@
 
 
 </div>
-<div class="theCorrectFontParagraph col-xs-offset-2 col-xs-8" id="enquiry">
+<div class="theCorrectFontParagraph col-xs-offset-2 col-xs-8 enquiry" >
 
 <center>
     <?php

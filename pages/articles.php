@@ -1,6 +1,6 @@
 <div id="Articles" class="contentbox">
 
-<div class="contactTopDiv"></div>
+
 
 <div id="articlesDiv" class="centerPseudo">
 

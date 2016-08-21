@@ -12,144 +12,24 @@ body {
   margin-left: auto;
 }
 
-a {color: black;text-decoration: none;}
+a {color: black;text-decoration: none;display: inline-block;float: left;}
 a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
-
-
-*:focus {
-    outline: none;
+a:hover{
+    text-decoration: none;
+    opacity: 1;
 }
+
+* {margin: 0px;}
+*:focus {outline:none !important}
+
+
+div {overflow: visible;}
 
 textarea:focus, input:focus{
     outline: none;
 }
 
-a {display: inline-block;float: left;}
-
-
-.removeBorderBottom { border-bottom-style: none; }
 span {line-height: 19px;color: rgb(129, 129, 129);font-family: ArialMT, Arial, sans-serif;/* font-size: 12px; */font-stretch: normal;font-style: normal;font-variant: normal;font-weight: 400;letter-spacing: 0px;text-align: left;text-indent: 0px;text-transform: none;word-wrap: break-word;}
-* {margin: 0px;}
-.style_SkipStroke { opacity: 1; background: transparent; }
-.nav-tabs > li > a {margin-right: 0px;}
-.tabs {margin-top: 20px;}
-
-
-div {overflow: visible;}
-
-.inline-block.shape-with-text { vertical-align: bottom; }
-
-/* Main Divs */
-
-#content {width: 100%;overflow: hidden;margin-top: 2px;float: left;position: relative;position: relative;left: 0px;}
-
-#divInImageOpenPhotoSwipe
-{
-
-}
-
-.style_2 {
-    color: rgb(94, 55, 50);
-    line-height: 29px;
-    opacity: 1;
-}
-
-.style_1 {
-    color: rgb(173, 173, 173);
-    line-height: 29px;
-    opacity: 1;
-}
-
-
-.logoLine
-{
-  width: 60%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
-
-/*Gallery CSS */
-
-.pswp__caption__center{text-align: center;}
-
-.pImageName{ text-align: center;  font-style: italic; margin:0px; margin-left: 5px;  font-size: 1.2em; }
-
-.pImageName{ font-family: 'Open Sans', sans-serif;  font-weight: lighter; letter-spacing: 1px; }
-/*.pMargin{font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 2px;}
-.pSold{font-family: 'Open Sans', sans-serif;    font-weight: lighter; letter-spacing: 2px;}*/
-
-.pSold{color: red;}
-
-.pBold{font-weight: bold;}
-
-.pSpaceToNextImage
-{
-	margin-bottom:10px;
-	margin-top: -4px;
-}
-
-.pMargin{margin:0px;margin-top: -7px;font-family: 'Open Sans', sans-serif;letter-spacing: 1px;}
-
-#my-gallery a {margin-left: 0.4em!important;margin-right: 0.1em!important;margin-bottom: 0.2em!important;margin-top: 0.5em!important;}
-
-.galleryImage {width: 82%;/* position: relative; *//* display: inline-block; */float: center;}
-
-.galleryImageContainer
-{
-	 	display: inline-block;
-	 	float: left;
-	 	padding-right:0px!important;
-	 	padding-left:0px!important;
-    overflow-y: hidden!important;
-    overflow-x: hidden!important;
-}
-
-.galleryTextSize
-{
-  font-size: 11px;
-}
-
-
-
-.galleryChild { margin-top: 50px; }
-
-
-.kiko-gallery { width: 100%; height: auto; float: left; }
-.kiko-gallery a { display: block; float: left;margin: 0px 4px 12px 5px; line-height: 0;}
-.demo-gallery a {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
-a.demo-gallery__img--main { width: auto; height: auto;margin-left: 5px;}
-.demo-gallery figure { display: none; }
-
-/*///////////////Contact Page */
-
-.contactSocialIcons
-{
-  width: 25px;
-  height:25px;
-  margin-right: 2.9em;
-  opacity: 0.5;
-}
-
-.contactSocialLi
-{
-  display:inline;
-}
-
-
-#mainAboutImage
-{
-  width: 100%;
-  margin-bottom: 5%;
-}
-
-
-a:hover{
-    text-decoration: none;
-    opacity: 1;
-}
 
 p, a, center {
 	font-weight: lighter;
@@ -162,45 +42,11 @@ p, a, center {
 	text-decoration: none;
 }
 
-
-
-
-.contactTextSpan{font-size: 1.2em !important;}
-
-.contactEmailAndSocialText{ margin-left:2px;font-size: 13px !important;font-weight: bold;}
-
-#contactTopDiv{height: 3.5em;}
-
-
-
-
-
-#bio
-{
-	font-size: 11px;
+input {
+    outline: none;
 }
 
-#enquiry
-{
-  font-size: 11px;
-  margin-top: 7%;
-  margin-bottom: 2%;
-}
-
-.theCorrectFont
-{
-  list-style: none;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
-  letter-spacing: 5px;
-}
-
-.theAFloatNone
-{
-  clear:both;
-  float: none!important;
-}
-
+#content {width: 100%;overflow: hidden;margin-top: 2px;float: left;position: relative;position: relative;left: 0px;}
 
 
 .theCorrectFontParagraph
@@ -211,47 +57,9 @@ p, a, center {
   letter-spacing: 2px;
 }
 
-.IGF
-{
-	margin-bottom:15px !important;
-}
-
-.ig-text
-{
-	    font-size: 13px!important;
-}
-
-.contactLinks{
-   /* margin: auto; */
-   }
-
-.contactNames
-{
-  margin: auto;
-
-}
-
-body
-{
-
-}
-
-
-
-
-
-input {
-    outline: none;
-}
-
-
-*:focus {outline:none !important}
-
 
 @media (min-width:320px)
 {
-
-
   .pContentNone
   {
     display: block;
@@ -260,83 +68,31 @@ input {
   {
     display: none;
   }
-
-
 
 	body{font-size: 14px;}
   pSold{font-size: 12px;}
-	.homePageImages1 {height: 15.2em;}
-	.demo-gallery__img--main{data-size:"1055x1460"}
-	#nav {margin-top: 8px;/* float: left; */margin-bottom: 10px; }
-  .nav { letter-spacing: 1px; }
   #content {margin-top: 2px;}
-
-	/*#content  { width: 23em; } /* smartphones, iPhone, portrait 480x320 phones */
 }
-@media (min-width:330px)
-{
-  .pContentNone
-  {
-    display: block;
-  }
-  .desktopOnly
-  {
-    display: none;
-  }
 
+
+#bio
+{
+	font-size: 11px;
 }
 
 @media (min-width:481px)
 {
-
-
-  .pContentNone
-  {
-    display: block;
-  }
-  .desktopOnly
-  {
-    display: none;
-  }
 	body{font-size: 16px;}
-	#nav {  margin-top: 8px;  margin-bottom: 20px; }
-  .nav { letter-spacing: 2px; }
-
   #content {margin-top: 3px;}
-	/*#content  { width: 420px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-  .invisibleText
-  {
-    margin-top:5px;
-  }
 }
 
 
-@media (min-width:607px) {
 
-  #theMailCenterA
-  {
-    font-size: 2.4vw;
-  }
-
-}
 
 
 
 @media (min-width:641px)
 {
-  #theMailCenterA
-  {
-    font-size: 2.2vw;
-  }
-
-    .pContentNone
-    {
-      display: block ;
-    }
-    .desktopOnly
-    {
-      display: none;
-    }
 
 		body{font-size: 26px;}
 
@@ -406,26 +162,6 @@ input {
 	body{font-size: 38px;}
  /* hi-res laptops and desktops */
 }
-
-
-	.block {
-		width: 1px;
-		height: 45px;
-		background: #fff;
-		position: absolute;
-		margin-top: -16px;
-		margin-left: ;
-		top: 48%;
-		left: 50%;
-
-		-webkit-transition:  ease-in-out 0.4s;
-		-moz-transition:  ease-in-out 0.4s;
-		transition:  ease-in-out 0.4s;
-
-
-	}
-
-
 
 
 .centerPseudo

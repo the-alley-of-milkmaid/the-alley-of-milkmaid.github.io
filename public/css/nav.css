@@ -8,6 +8,7 @@
 .nav > li > a { position: relative; display: block; padding: 10px 15px; }
 .nav > li > a:hover, .nav > li > a:focus { text-decoration: none; background-color: transparent }
 .nav-tabs > li {float: left;margin-bottom: -1px;}
+.nav-tabs > li > a {margin-right: 0px;}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: navy; cursor: default; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; background-color: rgba(0, 0, 0, .075); }
 .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus { border: 1px solid rgb(221, 221, 221); }
 
@@ -16,6 +17,8 @@
 {
 font-size: calc(8px + 0.5vw)!important;
 }
+
+.removeBorderBottom { border-bottom-style: none; }
 
 
 #divOfName
@@ -51,7 +54,11 @@ font-size: calc(8px + 0.5vw)!important;
 .contentbox {
   margin-top: 5px;
 }
-
+@media (min-width:320px)
+{
+	#nav {margin-top: 8px;/* float: left; */margin-bottom: 10px; }
+  .nav { letter-spacing: 1px; }
+}
 @media (min-width:416px)
 {
   #theNav3
@@ -70,6 +77,11 @@ font-size: calc(8px + 0.5vw)!important;
   {
     margin-left: 32%;
   }
+}
+@media (min-width:481px)
+{
+	#nav {  margin-top: 8px;  margin-bottom: 20px; }
+  .nav { letter-spacing: 2px; }
 }
 
 @media (min-width:500px)

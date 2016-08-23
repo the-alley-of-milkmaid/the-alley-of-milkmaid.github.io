@@ -31,7 +31,8 @@ $images= array
   array("18.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
   array("20.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
   array("19.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("21.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold")
+  array("21.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold"),
+  array("boxOfChocolate.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold")
   );
 
 

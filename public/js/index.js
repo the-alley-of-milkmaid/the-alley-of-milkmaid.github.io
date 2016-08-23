@@ -42,7 +42,7 @@ function oneSecondFunction()
 	{
 		$("#divOfName").css('visibility','visible').hide().fadeIn(1000).delay(0).queue(function(next) 
 	{
-		$("#content").css('visibility','visible').hide().fadeIn(500).removeClass('visib_hidden');
+		$("#content").css('visibility','visible').hide().fadeIn(750).removeClass('visib_hidden');
 		var elementsActive=$(".active");
 		if(elementsActive.length==0)
 		{

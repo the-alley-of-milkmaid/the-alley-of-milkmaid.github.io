@@ -62,8 +62,8 @@ $articles= array
   (
     array("sdasds" ,"http://www.w3schools.com/html/"),
     array("xxx" ,"http://www.w3schools.com/html/"),
-    array("ssss" ,"http://www.w3schools.com/html/"),
-    array("ssss" ,"http://www.w3schools.com/html/"),
+    array("www.articlemagazzzinee.cceee" ,"http://www.w3schools.com/html/"),
+    array("egyptian hyperreaistic artist" ,"http://www.w3schools.com/html/"),
     array("ssss" ,"http://www.w3schools.com/html/"),
   );
 
@@ -85,7 +85,7 @@ $enquiryText = "For purchase enquiries and costs, or to arrange a viewing, pleas
 
 ////////////////////////////////////////////// KIKO ONLY //////////////////////////////////////////////
 
-//Overlay Data 
+//Overlay Data
 $gallery_image_to_overlay_size = [
   "640*640" => array(78.12,100),
   "960*720" => array(58.5,100),

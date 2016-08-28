@@ -62,7 +62,7 @@ function resizeNav()
 	/*
 	Get Left MArgin between two nav tabs and after the third one if its there
 	*/
-	function getLeftMargin(id1,id2,id3)
+	function getLeftMargin(ids)
 	{
 		var f=$("#"+id1);
 		var g=$("#"+id2);
@@ -133,7 +133,7 @@ function resizeNav()
 		fourthNav.css('margin-left',contactLeftMargin+'px');
 		thirdNav.css('margin-left',articleLeftMargin+'px');
 
-		leftMargin=leftMargin>mm?leftMargin:mm;
+		//leftMargin=leftMargin>mm?leftMargin:mm;
 		$("#nav").css('margin-left',leftMargin+'px');
 	}
 	putAllIdsInMiddle();

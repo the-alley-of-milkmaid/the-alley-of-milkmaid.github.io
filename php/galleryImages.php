@@ -245,11 +245,7 @@ function givenGalleryImageIndexGetImageDiv($index)
 
 
   //
-  if(array_key_exists($j,$images[$index]))
-      $formatNew .= '<p class="pContentNone pSpaceToNextImage  pSold">&nbsp&nbsp'.$images[$index][$j] .'</p>';
-  else {
-    $formatNew .= '<p class="pContentNone pSpaceToNextImage"></p>';
-  }
+  $formatNew .= '<p class="pContentNone pSpaceToNextImage  pSold">&nbsp&nbsp '.$soldOptional .'</p>';
     $formatNew .='<div id="d" class="pContentNone" style="visibility: visible; display: block;">
 <img src="public/img/other/LogoLine.png" class="pContentNone logoLine"></div>';
     //$formatNew .= '<img src="public/img/other/SeperatorLine.png" class="pMargin" alt="Seperator Line" width="300px" height="12">';

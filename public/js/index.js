@@ -133,7 +133,7 @@ function resizeNav()
 		fourthNav.css('margin-left',contactLeftMargin+'px');
 		thirdNav.css('margin-left',articleLeftMargin+'px');
 
-		leftMargin=leftMargin>mm?leftMargin:mm;
+		//leftMargin=leftMargin>mm?leftMargin:mm;
 		$("#nav").css('margin-left',leftMargin+'px');
 	}
 	putAllIdsInMiddle();

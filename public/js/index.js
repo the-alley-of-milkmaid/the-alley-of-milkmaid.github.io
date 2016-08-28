@@ -210,7 +210,7 @@ $( document ).ready(function()
 
      if (isMobile.matches)
      {
-           swipeSpeed = 400;
+           swipeSpeed = 300;
            $(".hrefToRemoveInMobile").removeAttr("href");
            swipe=true;
      }

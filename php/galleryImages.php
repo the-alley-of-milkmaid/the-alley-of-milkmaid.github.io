@@ -54,9 +54,9 @@ function givenExhibitionIndexGetImageDiv($index)
 		<div class="col-xs-6 col-sm-6 col-md-6">
 			<div class="ExhibitionDescription">
 			<h4>%s</h4>
-			<span style ="font-style:italic" class="subtitle">%s</span><br>
+			<span style ="font-style:italic" class="theCorrectFontParagraph subtitle">%s</span><br>
 			<span style ="font-weight:600"  class="date">%s</span><br>
-			<span class="description">%s</span><br>
+			<span style="    letter-spacing: 1px !important;" class="theCorrectFontParagraph">%s</span><br>
 			<a href="%s" style="font-size:12px">Read More</a><br>
 			</div>
 		</div>
@@ -166,7 +166,7 @@ function givenGalleryImageIndexGetImageDiv($index)
   $imageName = $images[$index][$j++];
   $imageMedium = $images[$index][$j++];
   $imageFrame = $images[$index][$j++];
-  //$soldOptional= array_key_exists ($j,$images)?$images[$index][$j++]:"";
+  $soldOptional = array_key_exists ($j,$images[$index])?$images[$index][$j++]:"";
 
 	if(!isIndexEmpty($index))
 	{
@@ -204,8 +204,10 @@ function givenGalleryImageIndexGetImageDiv($index)
                            width:'.$computedOverlayWidth.'%% !important;">
                           <span class="theCorrectFontParagraph titleSize overlayTitle" style="margin-top: '.$titleMargin.'%%;color:white;">'.$imageName.'</span>
 
-                          <span style="color:white;" class="theCorrectFontParagraph size overlaySizeAndMedium">'.$width.'x'.$height.' cm<br>
+                          <span style="color:white;" class="theCorrectFontParagraph size overlaySizeAndMedium">'.$imageFrame.'<br>
                           '.$imageMedium.'</span>
+                          <span style="color:white;" class="theCorrectFontParagraph size overlaySold"><br>
+                          '.$soldOptional.'</span>
                           </div>
                           </div>
 
@@ -226,8 +228,10 @@ function givenGalleryImageIndexGetImageDiv($index)
                          width:'.$computedOverlayWidth.'%% !important;">
                         <span class="theCorrectFontParagraph titleSize overlayTitle" style="margin-top: '.$titleMargin.'%%;color:white;">'.$imageName.'</span>
 
-                        <span style="color:white;" class="theCorrectFontParagraph size overlaySizeAndMedium">'.$width.'x'.$height.' cm<br>
+                        <span style="color:white;" class="theCorrectFontParagraph size overlaySizeAndMedium">'.$imageFrame.'<br>
                         '.$imageMedium.'</span>
+                        <span style="color:white;" class="theCorrectFontParagraph size overlaySold"><br>
+                        '.$soldOptional.'</span>
                         </div>
        			            </div>
 

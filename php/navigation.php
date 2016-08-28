@@ -1,4 +1,4 @@
-<div id="nav" class="col-xs-offset-1 col-xs-11 col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 col-lg-offset-3 col-lg-9 tabs visib_hidden" role="tabpanel">
+<div id="nav" class=" tabs visib_hidden" role="tabpanel">
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs removeBorderBottom" role="tablist">

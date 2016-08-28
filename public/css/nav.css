@@ -14,9 +14,7 @@
 
 
 .nav_tab_li
-{
-font-size: calc(8px + 0.5vw)!important;
-}
+{font-size: calc(11px + 0.5vw)!important;}
 
 .removeBorderBottom { border-bottom-style: none; }
 
@@ -44,7 +42,7 @@ font-size: calc(8px + 0.5vw)!important;
 }
 
 .nourineName {
-    width: 75%;
+    width: 85%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -108,6 +106,6 @@ font-size: calc(8px + 0.5vw)!important;
 @media (min-width:800px)
 {
   .nourineName {
-      width: 67%;
+      width: 54%;
     }
 }

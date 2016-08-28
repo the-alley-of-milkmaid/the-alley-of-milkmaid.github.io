@@ -140,7 +140,7 @@ input {
   }
 	body{/* font-size: 36px; */}
   #content {margin-top: 17px;}
-	#my-gallery a {margin-right: 12px;margin-left: 24px;margin-bottom: 22px;margin-top: 11px;}
+	#my-gallery a {margin-right: 12px;margin-left: 4px;margin-bottom: 22px;margin-top: 11px;}
   .pMargin{/* margin-right: 12px; *//* margin-left: 24px; */}
   .pSold{/* margin-right: 12px; *//* margin-left: 24px; */}
 	.homePageImages {width: 172px; max-width: 100%;height: 145px; border: 0px;}

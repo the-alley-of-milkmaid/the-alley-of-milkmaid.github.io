@@ -15,7 +15,12 @@
 	height: 100%;
 }
 
-
+.overlaySold
+{
+	font-size: 13px!important;
+	font-weight: lighter;
+	margin-top: 3%!important;
+}
 
 
 .visib_hidden
@@ -48,7 +53,7 @@
 .overlaysmall span.size{
 	color: fff;
 	font-weight: lighter;
-	margin-top: 36%;
+	margin-top: 20%;
 	display: block;
   text-align: center;
 }

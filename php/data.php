@@ -6,7 +6,7 @@ $tabIcon="public/img/other/nTabIcon.png";
 
 //About data
 $bioText = "Working in pastels, pencils and charcoal Nourine Hammad not only strives to produce works that are representational, but goes beyond that and tries to discover the truth within her subjects. By approaching her subject matter honestly and without vanity, she strives to create detailed work that celebrates perfection and imperfection which coexist comfortably alongside each other. The way Hammad plays with objects and colour is sophisticated and balanced. A feast for the eyes.";
-$aboutMainImage = "public/img/normalSize/2.jpg";
+$aboutMainImage = "public/img/normalSize/HomeImage.jpg";
 
 //Artworks Data
 $imagesLocationNormal= "public/img/normalSize/";
@@ -42,33 +42,28 @@ $exhibtionsLocation = "public/img/exhibitions/";
 $exhibitionPhotoSize = "100%";
 $exhibitions= array
   (
-  array("wrecks-high-res.jpg","THE BEAUTY OF PAPER","Group show","8 - 26 SEPTEMBER 2015","any random txt2 any random txt any random txt ldkdks kd kkkk as laskdkasdkd las kasd any random txt any random txt any random txt any random txt any random txt any random txt any random txt any random txt any random txt","http://www.plusonegallery.com/exhibitions/103/overview/"),
-  array("alexandra-klimas-chicken-painting.jpg","Winter Show","Group show","13 JANUARY - 6 FEBRUARY 2016","any random txt","http://www.plusonegallery.com/exhibitions/107/overview/"),
-  array("wrecks-high-res.jpg","THE BEAUTY OF PAPER","Group show","8 - 26 SEPTEMBER 2015","any random txt2","http://www.plusonegallery.com/exhibitions/103/overview/"),
-  array("wrecks-high-res.jpg","THE BEAUTY OF PAPER","Group show","8 - 26 SEPTEMBER 2015","any random txt2","http://www.plusonegallery.com/exhibitions/103/overview/"),
-  array("alexandra-klimas-chicken-painting.jpg","Winter Show","Group show","13 JANUARY - 6 FEBRUARY 2016","any random txt","http://www.plusonegallery.com/exhibitions/107/overview/"),
-  array("wrecks-high-res.jpg","THE BEAUTY OF PAPER","Group show","8 - 26 SEPTEMBER 2015","any random txt2 any random txt any random txt any random txt any random txt any random txt any random txt any random txt any random txt any random txt any random txt any random txt","http://www.plusonegallery.com/exhibitions/103/overview/"),
-  array("alexandra-klimas-chicken-painting.jpg","Winter Show","Group show","13 JANUARY - 6 FEBRUARY 2016","any random txt","http://www.plusonegallery.com/exhibitions/107/overview/"),
-  array("wrecks-high-res.jpg","THE BEAUTY OF PAPER","Group show","8 - 26 SEPTEMBER 2015","any random txt2","http://www.plusonegallery.com/exhibitions/103/overview/"),
-  array("wrecks-high-res.jpg","THE BEAUTY OF PAPER","Group show","8 - 26 SEPTEMBER 2015","any random txt2","http://www.plusonegallery.com/exhibitions/103/overview/"),
+  array("Opening.jpg","OFFICIAL OPENING","Group show","20 SEPTEMBER - 15 OCTOBER 2016","PLUS ONE GALLERY - BATTERSEA REACH","http://www.plusonegallery.com/exhibitions/110/overview/"),
+  array("SummerShow.jpg","SUMMER SHOW","Group show","20 JULY - 3 SEPTEMBER 2016","PLUS ONE GALLERY - BATTERSEA REACH","http://www.plusonegallery.com/exhibitions/109/overview/"),
+  array("WinterShow.jpg","WINTER SHOW","Group show","13 JANUARY - 6 FEBRUARY 2016","PLUS ONE GALLERY","http://www.plusonegallery.com/exhibitions/107/overview/"),
+  array("TheBeautyOfPaper.jpg","THE BEAUTY OF PAPER","Group show","8 - 26 SEPTEMBER 2015","PLUS ONE GALLERY","http://www.plusonegallery.com/exhibitions/103/overview/"),
   );
 
 
 //Article Data
 $articles= array
   (
-    array("sdasds" ,"http://www.w3schools.com/html/"),
-    array("xxx" ,"http://www.w3schools.com/html/"),
-    array("www.articlemagazzzinee.cceee" ,"http://www.w3schools.com/html/"),
-    array("egyptian hyperreaistic artist" ,"http://www.w3schools.com/html/"),
-    array("ssss" ,"http://www.w3schools.com/html/"),
+    array("Nourine Hammad | Plus One Gallery" ,"http://www.plusonegallery.com/artists/191-nourine-hammad/overview/"),
+    array("Nourine Hammad: Reality check | CairoScene" ,"http://www.cairoscene.com/ArtsAndCulture/Nourine-Hammad-Reality-Check?M=True"),
+    array("An interview with Nourine Hammad | Plus One Gallery" ,"http://www.plusonegallery.com/blog/52/"),
+    array("Hyperrealism 3D drawings by Nourine Hammad | Art People Gallery" ,"https://www.artpeoplegallery.com/hyperrealism-3d-drawings-nourine-hammad/"),
+    array("Egyptian Hyperrealism Artist Claims International Recognition in the UK | Egyptian Streets" ,"http://egyptianstreets.com/2015/09/13/egyptian-hyperrealism-artist-claims-international-recognition-in-the-uk/"),
   );
 
 //Contact Data
 $contactPageText = "contact@nourinehammad.com";
 $facebookPage="https://m.facebook.com/profile.php?id=1413192872293705&refid=17";
 $instagramPage="https://www.instagram.com/nourinehammadart/";
-$enquiryText = "For purchase enquiries and costs, or to arrange a viewing, please contact our team at info@plusonegallery.com or phone the gallery directly on 020 7730 7656.";
+$enquiryText = "";
 
 
 
@@ -84,17 +79,24 @@ $enquiryText = "For purchase enquiries and costs, or to arrange a viewing, pleas
 
 //Overlay Data
 $gallery_image_to_overlay_size = [
-  "640*640" => array(78.12,100),
-  "960*720" => array(58.5,100),
-  "960*706" => array(57.5,100),
-  "960*708" => array(57.56,100),
-  "960*960" => array(78.2,100),
-  "960*700" => array(57.02,100),
-  "799*960" => array(94,100),
-  "733*960" => array(100,97.5),/*(100,97.5)*/
-  "751*960" => array(99.9,100),
-  "757*960" => array(99.1,100),
-  "720*960" => array(100,95.9),/*100,95.9*/
-  "2432*2855" => array(91.5,100),
+  "1215*1632" => array(100,95.1), /*Chaos*/
+  "1732*1232" => array(55.4,100), /*Hypnotizing lollipops*/
+  "2448*3264" => array(100,96), /*The Jolly Joker*/
+  "1208*1632" => array(100,94.5), /*The Joker I*/
+  "1218*1632" => array(100,95.4), /*The Joker II*/
+  "2432*2855" => array(91.5,100), /*Box of Chocolate*/
+  "2784*3984" => array(100,89.4), /*Ace spade*/
+  "2880*4064" => array(100,90.6),/*Ace heart*/
+  "1351*1935" => array(100,89.4),/*Ace club*/
+  "1428*2019" => array(100,90.3),/*Ace diamond*/
+  "1845*2487" => array(100,94.9),/*King*/
+  "1200*1665" => array(100,92),/*Queen*/
+  "2126*2862" => array(100,95),/*Jack*/
+  "2267*1700" => array(58.6,100),/*Mickey*/
+  "629*533" => array(66.1,100),/*Chipsy*/
+  "1084*1181" => array(85.1,100),/*Dollar*/
+  "2710*2260" => array(65.1,100),/*Euro*/
+  "1432*1368" => array(74.6,100),/*Crushed Can*/
+  "1694*1610" => array(74.1,100),/*Light bulb*/
 ];
 ?>

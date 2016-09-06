@@ -12,27 +12,24 @@ $aboutMainImage = "public/img/normalSize/2.jpg";
 $imagesLocationNormal= "public/img/normalSize/";
 $images= array
   (
-  array("1.jpg","This is a fdss22","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("2.jpg","This is a fdss223","Mixed Media on PAper Board","95 * 71 cm"),
-  array("3.jpg","This is a fdss4","Mixed Media on PAper Board","95 * 71 cm"),
-  array("4.jpg","This is a fdss5","Mixed Media on PAper Board","95 * 71 cm"),
-  array("5.jpg","This is a fdss6","Mixed Media on PAper Board","95 * 71 cm"),
-  array("6.jpg","This is a fdss7","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("7.jpg","This is a fdss323","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("9.jpg","This is a fdss","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("10.jpg","This is a fds","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("11.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("12.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("13.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("14.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("15.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("16.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("17.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("18.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("20.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("19.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","SOLD"),
-  array("21.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold"),
-  array("boxOfChocolate.jpg","This is a fdss.","Mixed Media on PAper Board","95 * 71 cm","Sold")
+  array("Chaos.jpg","Chaos, 2016","Pastels on paper","Framed: 116 cm x 85 cm ", "AVAILABLE IN PLUS ONE GALLERY"),
+  array("HypnotizingLollipops.jpg","Hypnotizing Lollipops, 2016","Pastels on paper","Framed: 69 cm x 84cm", "AVAILABLE IN PLUS ONE GALLERY"),
+  array("TheJollyJoker.jpg","The Jolly Joker, 2016","Pastels on paper","Framed: 105 cm x 85 cm", "AVAILABLE IN PLUS ONE GALLERY"),
+  array("Joker_I.jpg","The Joker I","Pastels on paper","Framed: 63.5 cm x 88 cm",  "AVAILABLE IN PLUS ONE GALLERY"),
+  array("Joker_II.jpg","The Joker II","Pastels on paper","Framed: 63.5 cm x 88 cm", "AVAILABLE IN PLUS ONE GALLERY"),
+  array("boxOfChocolate.jpg","Life Is Like A Box Of Chocolate, 2015","Pastels on paper","Framed: 53 x 47 cm", "AVAILABLE IN PLUS ONE GALLERY"),
+  array("AceOFSpades.jpg","Popping Aces - Ace of spades, 2015","Pastels on paper","Framed: 95 cm x 71 cm" ,"SOLD"),
+  array("AceOfHearts.jpg","Popping Aces - Ace of hearts, 2015","Pastels on paper","Framed: 95 cm x 71 cm","SOLD"),
+  array("AceOfClubs.jpg","Popping Aces - Ace of clubs, 2015","Pastels on paper","Framed: 95 cm x 71 cm" ,"SOLD"),
+  array("AceOfDiamonds.jpg","Popping Aces - Ace of diamonds, 2015","Pastels on paper","Framed: 95 cm x 71 cm" ,"SOLD"),
+  array("KingOfSpades.jpg","King Of Spades, 2014","Pastels on paper","Framed: 75 cm x 55 cm","SOLD"),
+  array("QueenOfHearts.jpg","Queen Of Hearts, 2014","Pastels on paper","Framed: 75 cm x 55 cm", "SOLD"),
+  array("MickeyMagazine.jpg","Vintage Mickey Magazine, 2014","Pastels on paper","Framed: 38 cm x30 cm", "SOLD"),
+  array("Chipsy.jpg","Chipsy, 2014","Pastels on paper","Framed:  40 cm x 33 cm"),
+  array("DollarBill.jpg","Dollar Bill (inspired by Marcello Barenghi), 2014","Pastels on paper","Framed: 30 cm x 30 cm", "SOLD"),
+  array("ItalianEuro.jpg","Italian Euro (inspired by Marcello Barenghi), 2014","Pastels on paper","Framed: 30 cm x 30 cm", "SOLD"),
+  array("CrushedCan.jpg","Crushed Can (inspired by Marcello Barenghi), 2014","Pastels on paper","Framed: 40 cm x 33 cm"),
+  array("LightBulb.jpg","Light Bulb (inspired by Marcello Barenghi), 2014","Pastels on paper","Framed: 33 cm x 38  cm")
   );
 
 

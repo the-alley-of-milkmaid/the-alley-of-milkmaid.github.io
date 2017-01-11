@@ -12,6 +12,7 @@ $aboutMainImage = "public/img/normalSize/HomeImage.jpg";
 $imagesLocationNormal= "public/img/normalSize/";
 $images= array
   (
+  array("ChaosII.jpg","Chaos II, 2016","Pastels on paper","Framed: 116 cm x 85 cm ", "SOLD"),
   array("Chaos.jpg","Chaos, 2016","Pastels on paper","Framed: 116 cm x 85 cm ", "AVAILABLE IN PLUS ONE GALLERY"),
   array("HypnotizingLollipops.jpg","Hypnotizing Lollipops, 2016","Pastels on paper","Framed: 69 cm x 84cm", "AVAILABLE IN PLUS ONE GALLERY"),
   array("TheJollyJoker.jpg","The Jolly Joker, 2016","Pastels on paper","Framed: 105 cm x 85 cm", "AVAILABLE IN PLUS ONE GALLERY"),
